@@ -1,0 +1,1180 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8" name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css">
+    <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+    <link rel="shortcut icon" href="./ico.png" type="image/x-icon">
+    <title>豆豆文库</title>
+    <style>
+        .img {
+            border: 3px solid rgb(46, 46, 46);
+        }
+
+        .img3 {
+            border: 2px solid rgb(46, 46, 46);
+        }
+    </style>
+</head>
+
+<body class="mdui-bottom-nav-fixed " style="padding-top: 50px;">
+    <div class="mdui-drawer mdui-drawer-full-height mdui-drawer-close mdui-color-white" id="sidebar">
+        <p>&nbsp;</p>
+
+        <div class="mdui-container">
+            <img class="img" src="./ico.png" height="100" width="100" />
+            <div class="mdui-typo-headline-opacity">&nbsp;豆豆文库</div>
+            </img>
+
+        </div>
+        <div>&nbsp;</div>
+
+        <div class="mdui-container" mdui-tab>
+            <ul class="mdui-list mdui-list-dense">
+                <li class="mdui-list-item " onclick="window.open('https://qingfeng-wiki.vercel.app/index.html')">
+                    <div class="mdui-list-item-content">主页</div>
+                </li>
+                <li class="mdui-list-item " onclick="window.open('https://qingfeng-wiki.vercel.app/about.html')">
+                    <div class="mdui-list-item-content">关于</div>
+                </li>
+                <li class="mdui-list-item " onclick="window.open('https://qingfeng-wiki.vercel.app/contact.html')">
+                    <div class="mdui-list-item-content">联系我们</div>
+                </li>
+                <li class="mdui-list-item " onclick="window.open('https://qingfeng-wiki.vercel.app/donate.html')">
+                    <div class="mdui-list-item-content">捐赠</div>
+                </li>
+                <li class="mdui-list-item " onclick="window.open('https://github.com/qiumuu/Qingfeng-Wiki')">
+                    <div class="mdui-list-item-content">参与文库建设</div>
+                </li>
+            </ul>
+        </div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <li class="mdui-typo-caption-opacity">切换页面源</li>
+        <div>&nbsp;</div>
+
+        <div class="mdui-container" mdui-tab>
+            <ul class="mdui-list mdui-list-dense">
+                <li class="mdui-list-item " onclick="a()">
+                    <div class="mdui-list-item-content">维基百科</div>
+                </li>
+                <li class="mdui-list-item " onclick="b()">
+                    <div class="mdui-list-item-content">维基百科镜像1</div>
+                </li>
+                <li class="mdui-list-item " onclick="c()">
+                    <div class="mdui-list-item-content">维基百科镜像2</div>
+                </li>
+                <li class="mdui-list-item " onclick="d()">
+                    <div class="mdui-list-item-content">百度百科</div>
+                </li>
+                <li class="mdui-list-item " onclick="e()">
+                    <div class="mdui-list-item-content">大英百科全书</div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="mdui-container">
+        <div class="mdui-appbar  mdui-shadow-0">
+            <div class="mdui-toolbar">
+                <button mdui-drawer="{target:'#sidebar',overlay:true,swipe:true}"
+                    class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">menu</i> </button>
+                <div class="mdui-toolbar-spacer"></div>
+            </div>
+        </div>
+        <div>&nbsp;</div>
+        <div class="mdui-container">
+            <div class="mdui-typo">
+                <pre><img class="img3" src="./ico.png" height="50" width="50" /><div class="mdui-typo-display-1">豆豆文库</div><div class="mdui-typo-subheading">一个公益性质的政治学文库</div></pre>
+            </div>
+            <div>&nbsp;</div>
+
+            <div class="mdui-typo">
+                <pre><div class="mdui-typo-subheading">任何突破不在实验室而是在人脑中产生的学科——尤其是社会科学中的诸多门类，反而比其他学科更需要通过实证方法来研究，
+而必须的此类学科思维、学术研究的方法（method）、方法论（methodology）正是在足够的阅读量中产生的，
+以足够的文献阅读量为基础，才能去进行进一步的量化、质化研究。
+————豆豆</div></pre>
+            </div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+
+            <div class="mdui-valign">
+                <input class="mdui-textfield-input" name="url" type="text" id="url" placeholder="请直接输入你要查询的词条">
+                </form>
+                <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i value="test" class="mdui-icon material-icons"
+                        onClick="checkurl()">search</i></a>
+            </div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+
+
+            <script>
+                function checkurl() {
+                    var url = document.getElementById("url").value;
+                    window.open('https://qingfeng-wiki.vercel.app/wiki' + '/' + url + '.html');
+                    return true;
+                }
+            </script>
+            <div>&nbsp;</div>
+
+            <div class="mdui-typo">
+                <pre><div class="mdui-typo-display-1">文件列表&nbsp;<div class="mdui-typo-caption-opacity">占文库的10%</div></div>
+                    104-10150-10136.pdf
+                    13) 1991.06.21 Bush-Gorb Telcon (Jun 21 1991).pdf
+                    18) 1991.10 Politics of Russ Nationalism (Oct 1991) DOC_0000499577[1].pdf
+                    19) 1993 Soviet Economy Unravels (1993) DOC001.pdf
+                    2022 年第一季度城镇储户问卷调查报告.pdf
+                    20世纪80年代以来墨西哥的社会运动与民主转型.pdf
+                    2O世纪西方民主的转型及其启示.pdf
+                    90年代非洲民主转型的回顾与前瞻.pdf
+                    Activism_and_Objectivity_in_Political_Research.pdf
+                    Activism_versus_Criticism_The_Case_for_a_Distinctive_Role_for_Social_Critics.pdf
+                    Acute_Financial_Hardship_and_Voter_Turnout_Theory_and_Evidence_from_the_Sequence_of_Bank_Working_Day.pdf
+                    Affluence_and_Influence_in_a_Social_Democracy.pdf
+                    Agenda_Control_and_Timing_of_Bill_Initiation_A_Temporal_Perspective_on_Coalition_Governance_in_Parli.pdf
+                    Agenda_Seeding_How_1960s_Black_Protests_Moved_Elites_Public_Opinion_and_Voting.pdf
+                    Ages_of_American_Capitalism_A_History_of_the_United_States.pdf
+                    Ambiguous_Platforms_and_Correlated_Preferences_Experimental_Evidence.pdf
+                    Analytical_Democratic_Theory_A_Microfoundational_Approach.pdf
+                    Anarchy_Scarcity_Nature_Rousseaus_Stag_Hunt_and_the_Arctic_Walrus_Hunt_Compared.pdf
+                    Antidote_to_Backsliding_Ethnic_Politics_and_Democratic_Resilience.pdf
+                    An_Outbreak_of_Selective_Attribution_Partisanship_and_Blame_in_the_COVID-19_Pandemic.pdf
+                    Argument-stretching_slightly_invalid_political_arguments_and_their_effects_on_public_opinion.pdf
+                    Armed_Violence_and_Patriarchal_Values_A_Survey_of_Young_Men_in_Thailand_and_Their_Military_Experienc.pdf
+                    A_constitution_for_the_ocean_An_agora_on_ocean_governance.pdf
+                    A_Dynamic_Model_of_Speech_for_the_Social_Sciences.pdf
+                    A_failed_but_useful_constitution-making_process_How_Bachelets_process_contributed_to_constitution-ma.pdf
+                    A_Formal_Theory_of_Democratic_Deliberation.pdf
+                    A_Group-Based_Approach_to_Measuring_Polarization.pdf
+                    A_Logical_Model_for_Predicting_Minority_Representation_Application_to_Redistricting_and_Voting_Right.pdf
+                    A_need_for_control_Political_trust_and_public_preferences_for_asylum_and_refugee_policy.pdf
+                    A_Note_on_Posttreatment_Selection_in_Studying_Racial_Discrimination_in_Policing.pdf
+                    A_political_sociology_of_empire_Mughal_historians_on_the_making_of_Mughal_paramountcy.pdf
+                    A_Positive_Dialectic_Beps_and_The_United_States.pdf
+                    Ballot_Reform_the_Personal_Vote_and_Political_Representation_in_the_United_States.pdf
+                    Bargaining_and_Strategic_Voting_on_Appellate_Courts.pdf
+                    Beaten_ballots_political_participation_dynamics_amidst_police_interventions.pdf
+                    Belarus_Securitization_of_State_Politics_and_the_Impact_on_State-Society_Relations.pdf
+                    Benevolent_Policies_Bureaucratic_Politics_and_the_International_Dimensions_of_Social_Policy_Expansio.pdf
+                    Between_Hope_and_Disaffection_The_Chilean_Constitution-Making_Process_and_the_Intermediation_Crisis.pdf
+                    Bloc_Voting_for_Electoral_Accountability.pdf
+                    Bringing_in_the_New_Votes_Turnout_of_Women_after_Enfranchisement.pdf
+                    BUREAUCRACY.pdf
+                    Bureaucratic_Quality_and_the_Gap_between_Implementation_Burden_and_Administrative_Capacities.pdf
+                    Buying_a_Blind_Eye_Campaign_Donations_Regulatory_Enforcement_and_Deforestation.pdf
+                    Buying_Votes_across_Borders_A_List_Experiment_on_Mexican_Immigrants_in_the_United_States_CORRIGENDUM.pdf
+                    C0101政治学.pdf
+                    Campaign_Contributions_and_Roll-Call_Voting_in_the_US_House_of_Representatives_The_Case_of_the_Sugar.pdf
+                    Campaign_Finance_Regulations_and_Public_Policy.pdf
+                    Cant_We_All_Just_Get_Along_How_Women_MPs_Can_Ameliorate_Affective_Polarization_in_Western_Publics.pdf
+                    Canvassing_the_Gatekeepers_A_Field_Experiment_to_Increase_Women_Voters_Turnout_in_Pakistan.pdf
+                    Can_Courts_in_Nondemocracies_Deter_Election_Fraud_De_Jure_Judicial_Independence_Political_Competitio.pdf
+                    Can_Elections_Motivate_Responsiveness_in_a_Single-Party_Regime_Experimental_Evidence_from_Vietnam.pdf
+                    Can_Exposure_to_Celebrities_Reduce_Prejudice_The_Effect_of_Mohamed_Salah_on_Islamophobic_Behaviors_a.pdf
+                    Can_political_alignment_reduce_crime_Evidence_from_Chile.pdf
+                    Can_Racial_Diversity_among_Judges_Affect_Sentencing_Outcomes.pdf
+                    Can_Stakeholders_Mobilize_Businesses_for_the_Protection_of_Democracy_Evidence_from_the_US_Capitol_In.pdf
+                    Capitalism_and_the_Creation_of_the_US_Constitution.pdf
+                    Capture_or_Empowerment_Governing_Citizens_and_the_Environment_in_the_European_Renewable_Energy_Trans.pdf
+                    Carl Walter & Fraser Howie：Red Capitalism——The Fragile Financial Foundation of China's Extraordinary Rise.pdf
+                    Cash_Crops_Print_Technologies_and_the_Politicization_of_Ethnicity_in_Africa.pdf
+                    Childcare_Work_and_Household_Labor_During_a_Pandemic_Evidence_on_Parents_Preferences_in_the_United_S.pdf
+                    Chiles_failed_constitutional_intent_Polarization_fragmentation_haste_and_delegitimization.pdf
+                    China in the World -- Culture, Politics, and World Vision.pdf
+                    Citizenship_Deprivation_in_the_Courts_Unveiling_States_Constitutional_Structures.pdf
+                    Civic_Responses_to_Police_Violence.pdf
+                    Civilian_Protest_in_Civil_War_Insights_from_Cote_dIvoire.pdf
+                    Clarifying_the_People_Like_Me_Racial_Efficacy_and_Political_Behavior.pdf
+                    Climate_Change_and_the_Politics_of_Responsibility.pdf
+                    Coalition_inclusion_probabilities_a_party-strategic_measure_for_predicting_policy_and_politics.pdf
+                    Collaboration_and_Its_Political_Functions.pdf
+                    Collective_Remembrance_and_Private_Choice_GermanGreek_Conflict_and_Behavior_in_Times_of_Crisis.pdf
+                    Coming_out_to_Vote_The_Construction_of_a_Lesbian_and_Gay_Electoral_Constituency_in_the_United_States.pdf
+                    Competition_in_Congressional_Elections_Money_versus_Votes.pdf
+                    Competitive_mimicry_The_socialization_of_antifeminist_NGOs_into_the_United_Nations.pdf
+                    Complements_or_Substitutes_How_Institutional_Arrangements_Bind_Traditional_Authorities_and_the_State.pdf
+                    Conceptual_politics_and_resilience-at-work_in_the_European_Union.pdf
+                    Connections_as_Liabilities_The_Cost_of_the_PoliticsBusiness_Revolving_Door_in_China.pdf
+                    Consolidating_Progress_The_Selection_of_Female_Ministers_in_Autocracies_and_Democracies.pdf
+                    Constitution-Making_in_the_21st_Century_Lessons_from_the_Chilean_Process.pdf
+                    Constitutional_Adjudication_and_Constitutional_Politics_in_the_United_Kingdom_The_Miller_II_Case_in_.pdf
+                    Constitutional_Reform_and_the_Gender_Diversification_of_Peak_Courts.pdf
+                    Constitutional_Rigidity_Matters_A_Veto_Players_Approach.pdf
+                    Constitutions_as_moving_targets.pdf
+                    Constraining_Governments_New_Indices_of_Vertical_Horizontal_and_Diagonal_Accountability.pdf
+                    Constructivism_and_the_Logic_of_Political_Representation.pdf
+                    Contested_Killings_The_Mobilizing_Effects_of_Community_Contact_with_Police_Violence.pdf
+                    Cooperative_Capacities_of_the_Rational_Revising_Rawlss_Account_of_Prudential_Reasoning.pdf
+                    Coordinated_Dis-Coordination.pdf
+                    Coping_with_international_politics_A_case_study_of_Hong_Kong.pdf
+                    Cost_issues_with_telepsychiatry_in_the_United_States.pdf
+                    COVID-19疫情对中国区域经济及产业的影响.pdf
+                    Creating_Climate_Coalitions_Mass_Preferences_for_Compensating_Vulnerability_in_the_Worlds_Two_Larges.pdf
+                    Crisis_Standards_of_Care_Implementation_at_the_State_Level_in_the_United_States.pdf
+                    Crossing_Over_Majority_Party_Control_Affects_Legislator_Behavior_and_the_Agenda.pdf
+                    Cyclone_Not_Above_Politics_East_Pakistan_disaster_politics_and_the_1970_Bhola_Cyclone.pdf
+                    Dark_Parties_Unveiling_Nonparty_Communities_in_American_Political_Campaigns.pdf
+                    Declaring_and_Diagnosing_Research_Designs.pdf
+                    Deliberation_and_Ethical_Voting_Behavior_Evidence_from_a_Campaign_Experiment_in_Benin.pdf
+                    democracy-index-2020.pdf
+                    Democracy_and_the_Epistemic_Problems_of_Political_Polarization.pdf
+                    Demographic_Regulation_and_the_State_Centering_Gender_in_Our_Understanding_of_Political_Order_in_Ear.pdf
+                    Deprovincializing_Racial_Capitalism_John_Crawfurd_and_Settler_Colonialism_in_India.pdf
+                    Descriptive_Representation_and_Party_Building_Evidence_from_Municipal_Governments_in_Brazil.pdf
+                    Development_in_Decolonization_Walter_Rodney_Third_World_Developmentalism_and_Decolonizing_Political_.pdf
+                    Dialogue_as_a_Strategy_of_Struggle_Religious_Politics_in_East_Germany_19571968.pdf
+                    Diasporic_Foreign_Policy_Interest_Groups_in_the_United_States_Democracy_Conflict_and_Political_Entre.pdf
+                    Digging_into_the_Pocketbook_Evidence_on_Economic_Voting_from_Income_Registry_Data_Matched_to_a_Voter.pdf
+                    Digital_literacy_and_online_political_behavior.pdf
+                    Dimensions_of_Religious_Harmony_as_Constitutional_Practice_Beyond_State_Control.pdf
+                    Disaggregating_Civility_Politeness_Public-Mindedness_and_Their_Connection.pdf
+                    Disappointed_Expectations_Downward_Mobility_and_Electoral_Change.pdf
+                    Discrimination_Without_Traits_From_Social_Construction_to_the_Politics_of_Discrimination.pdf
+                    Diversity_Matters_The_Election_of_Asian_Americans_to_US_State_and_Federal_Legislatures.pdf
+                    Divided_We_Unite_The_Nature_of_Partyism_and_the_Role_of_Coalition_Partnership_in_Europe.pdf
+                    doc23.pdf
+                    Does_Exposure_to_the_Refugee_Crisis_Make_Natives_More_Hostile.pdf
+                    Does_Halting_Refugee_Resettlement_Reduce_Crime_Evidence_from_the_US_Refugee_Ban.pdf
+                    Does_Health_Vulnerability_Predict_Voting_for_Right-Wing_Populist_Parties_in_Europe.pdf
+                    Does_Political_Representation_Increase_Participation_Evidence_from_Party_Candidate_Lotteries_in_Mexi.pdf
+                    Does_Public_Diplomacy_Sway_Foreign_Public_Opinion_Identifying_the_Effect_of_High-Level_Visits.pdf
+                    Does_State_Repression_Spark_Protests_Evidence_from_Secret_Police_Surveillance_in_Communist_Poland.pdf
+                    Does_Victim_Gender_Matter_for_Justice_Delivery_Police_and_Judicial_Responses_to_Womens_Cases_in_Indi.pdf
+                    Domestic_Distributional_Roots_of_National_Interest.pdf
+                    Dont_Look_Back_in_Anger_Cooperation_Despite_Conflicting_Historical_Narratives.pdf
+                    Do_people_like_to_discuss_politics_A_study_of_citizens_political_talk_culture.pdf
+                    Do_Violent_Protests_Affect_Expressions_of_Party_Identity_Evidence_from_the_Capitol_Insurrection.pdf
+                    Do_Women_Make_More_Protectionist_Trade_Policy.pdf
+                    Drinking_Tea_with_the_Neighbors_Informal_Clubs_General_Trust_and_Trustworthiness_in_Mali.pdf
+                    Duration_of_the_constitution-making_process_as_an_indicator_of_post-constitutional_political_uncerta.pdf
+                    Eco-Miserabilism_and_Radical_Hope_On_the_Utopian_Vision_of_Post-Apocalyptic_Environmentalism.pdf
+                    Economic_Inequality_and_Political_Responsiveness_A_Systematic_Review.pdf
+                    Education_or_Indoctrination_The_Violent_Origins_of_Public_School_Systems_in_an_Era_of_State-Building.pdf
+                    Effectiveness_of_Incumbents_Strategic_Communication_during_Economic_Crisis_under_Electoral_Authorita.pdf
+                    Effective_for_Whom_Ethnic_Identity_and_Nonviolent_Resistance.pdf
+                    Electoral_Competitiveness_Tax_Bargaining_and_Political_Incentives_in_Developing_Countries_Evidence_f.pdf
+                    Electoral_Systems_and_Gender_Inequality_in_Political_News_Analyzing_the_News_Visibility_of_Members_o.pdf
+                    Elements_of_External_Validity_Framework_Design_and_Analysis.pdf
+                    Elite_Change_without_Regime_Change_Authoritarian_Persistence_in_Africa_and_the_End_of_the_Cold_War.pdf
+                    Embedding_Regression_Models_for_Context-Specific_Description_and_Inference.pdf
+                    Endogenous_Popularity_How_Perceptions_of_Support_Affect_the_Popularity_of_Authoritarian_Regimes.pdf
+                    Enfranchisement_and_Incarceration_after_the_1965_Voting_Rights_Act.pdf
+                    Engineering_Territory_Space_and_Colonies_in_Silicon_Valley.pdf
+                    Enhancing_Electoral_Equality_Can_Education_Compensate_for_Family_Background_Differences_in_Voting_Pa.pdf
+                    Ethnic_Bias_in_Judicial_Decision_Making_Evidence_from_Criminal_Appeals_in_Kenya.pdf
+                    Ethnic_Riots_and_Prosocial_Behavior_Evidence_from_Kyrgyzstan.pdf
+                    Europes_constitutional_retrofit.pdf
+                    Evidence_of_Caste-Class_Discrimination_from_a_Conjoint_Analysis_of_Law_Enforcement_Officers.pdf
+                    Expansion of Chinese Higher Education Since 1998 .pdf
+                    Explaining_Citizen_Hostility_against_Women_Political_Leaders_A_Survey_Experiment_in_the_United_State.pdf
+                    Explaining_the_Prevalence_of_State_Constitutional_Conventions_in_the_Nineteenth_and_Twentieth_Centur.pdf
+                    Explaining_womens_political_underrepresentation_in_democracies_with_high_levels_of_corruption.pdf
+                    Explanations_of_Institutional_Change_Reflecting_on_a_Missing_Diagonal.pdf
+                    Extortion_Civic_Action_and_Political_Participation_among_Guatemalan_Deportees.pdf
+                    Extraction_Assimilation_and_Accommodation_The_Historical_Foundations_of_IndigenousState_Relations_in.pdf
+                    Facing_Change_Gender_and_Climate_Change_Attitudes_Worldwide.pdf
+                    Failing_the_Test_The_Countervailing_Attitudinal_Effects_of_Civil_Service_Examinations.pdf
+                    Family_Matters_How_Immigrant_Histories_Can_Promote_Inclusion.pdf
+                    Fathers_Leave_Reduces_Sexist_Attitudes.pdf
+                    Female_Representation_and_Legitimacy_Evidence_from_a_Harmonized_Experiment_in_Jordan_Morocco_and_Tun.pdf
+                    Filling_the_Ranks_Moral_Risk_and_the_Ethics_of_Military_Recruitment.pdf
+                    Financial_Crises_and_the_Selection_and_Survival_of_Women_Finance_Ministers.pdf
+                    Foundations_of_a_New_Democracy_Schooling_Inequality_and_Voting_in_the_Early_Republic.pdf
+                    Found_in_translation_the_global_constitution_of_the_modern_international_order.pdf
+                    From_Chinese_Colonist_to_Yellow_Peril_Capitalist_Racialization_in_the_British_Empire.pdf
+                    From_Pluribus_to_Unum_The_Civil_War_and_Imagined_Sovereignty_in_Nineteenth-Century_America.pdf
+                    From_Recognition_to_Integration_Indigenous_Autonomy_State_Authority_and_National_Identity_in_the_Phi.pdf
+                    From_Rents_to_Welfare_Why_Are_Some_Oil-Rich_States_Generous_to_Their_People.pdf
+                    From_Thin_to_Thick_Representation_How_a_Female_President_Shapes_Female_Parliamentary_Behavior.pdf
+                    From_Victims_to_Dissidents_Legacies_of_Violence_and_Popular_Mobilization_in_Iraq_20032018.pdf
+                    Fundraising_for_Stigmatized_Groups_A_Text_Message_Donation_Experiment.pdf
+                    Gateway_or_getaway_Testing_the_link_between_lifestyle_politics_and_other_modes_of_political_particip.pdf
+                    Gender_and_Party_Discipline_Evidence_from_Africas_Emerging_Party_Systems.pdf
+                    Gender_and_the_Influence_of_Proportional_Representation_A_Comment_on_the_Peripheral_Voting_Thesis.pdf
+                    Gender_Candidate_Emotional_Expression_and_Voter_Reactions_During_Televised_Debates.pdf
+                    Gender_Law_Enforcement_and_Access_to_Justice_Evidence_from_All-Women_Police_Stations_in_India.pdf
+                    Gender_Stereotyping_and_the_Electoral_Success_of_Women_Candidates_New_Evidence_from_Local_Elections_.pdf
+                    GlobalTrends_2040.pdf
+                    Global_Slavery_in_the_Making_of_States_and_International_Orders.pdf
+                    Going_Local_Public_Attitudes_toward_Municipal_Offices_of_Immigration_Affairs.pdf
+                    Government_Rhetoric_and_the_Representation_of_Public_Opinion_in_International_Negotiations.pdf
+                    Group_Size_and_Protest_Mobilization_across_Movements_and_Countermovements.pdf
+                    Hayek as classical liberal public intellectual Neoliberalism, the privatization of public discourse and the future of democracy.pdf
+                    Hayek versus Trump The Radical Right’s.pdf
+                    Heideggers_heritage_The_temporal_politics_of_authenticity_then_and_now.pdf
+                    Heterogeneous_Naturalization_Effects_of_Dual_Citizenship_Reform_in_Migrant_Destinations_Quasi-Experi.pdf
+                    Historical_Border_Changes_State_Building_and_Contemporary_Trust_in_Europe.pdf
+                    Historiography_in_Bosnia_and_Herzegovina_Between_Academic_Discipline_and_Political_Activism.pdf
+                    Hobbes_and_Hats.pdf
+                    Hot_Politics_Affective_Responses_to_Political_Rhetoric.pdf
+                    How_Deliberation_Happens_Enabling_Deliberative_Reason.pdf
+                    How_do_constitution-making_processes_fail_The_case_of_Chiles_Constitutional_Convention_202122.pdf
+                    How_Do_Electoral_Incentives_Affect_Legislator_Behavior_Evidence_from_US_State_Legislatures.pdf
+                    How_Do_Politicians_Bargain_Evidence_from_Ultimatum_Games_with_Legislators_in_Five_Countries.pdf
+                    How_Exile_Shapes_Online_Opposition_Evidence_from_Venezuela.pdf
+                    How_Parties_React_to_Voter_Transitions.pdf
+                    How_Partisan_Is_Local_Election_Administration.pdf
+                    How_the_Trump_Administrations_Quota_Policy_Transformed_Immigration_Judging.pdf
+                    How_to_Get_Coal_Country_to_Vote_for_Climate_Policy_The_Effect_of_a_Just_Transition_Agreement_on_Span.pdf
+                    Human_or_not_Political_rhetoric_and_foreign_policy_attitudes.pdf
+                    Human_Rights_are_Increasingly_Plural_Learning_the_Changing_Taxonomy_of_Human_Rights_from_Large-scale.pdf
+                    Identifying_the_Rich_Registration_Taxation_and_Access_to_the_State_in_Tanzania.pdf
+                    Ideology_Critique_without_Morality_A_Radical_Realist_Approach.pdf
+                    Ideology_for_the_Future.pdf
+                    Images_emotions_and_international_politics_the_death_of_Alan_Kurdi.pdf
+                    Immigration_and_Public_Support_for_Political_Systems_in_Europe.pdf
+                    Immigration_Backlash_and_Democracy.pdf
+                    Impartial_Administration_and_Peaceful_Agrarian_Reform_The_Foundations_for_Democracy_in_Scandinavia.pdf
+                    Imperfect_Victims_Civilian_Men_Vulnerability_and_Policy_Preferences.pdf
+                    Im_Not_Sure_What_to_Believe_Media_Distrust_and_Opinion_Formation_during_the_COVID-19_Pandemic.pdf
+                    Inadvertent_reproduction_of_Eurocentrism_in_IR_The_politics_of_critiquing_Eurocentrism.pdf
+                    Inclusive_conflict_Competitive_clientelism_and_the_rise_of_political_violence.pdf
+                    Indias_Farmers_Protest_An_Inclusive_Vision_of_Indian_Democracy.pdf
+                    Informality_and_Politics_in_the_Global_South_Three_Perspectives.pdf
+                    Informing_the_Leader_Bureaucracies_and_International_Crises.pdf
+                    Infrastructure_and_the_integral_state_Internal_Relations_processes_of_state_formation_and_Gramscian_.pdf
+                    Instrumentally_Inclusive_The_Political_Psychology_of_Homonationalism.pdf
+                    Integrating_Data_Across_Misaligned_Spatial_Units.pdf
+                    International_Rewards_for_Gender_Equality_Reforms_in_Autocracies.pdf
+                    Intra-cabinet_politics_and_fiscal_governance_in_times_of_austerity.pdf
+                    Intrinsic_Social_Incentives_in_State_and_Non-State_Armed_Groups.pdf
+                    Introducing_HiSCoD_A_New_Gateway_for_the_Study_of_Historical_Social_Conflict.pdf
+                    Introduction_New_Directions_in_the_Study_of_Constitutional_Democracy.pdf
+                    Is_Deliberation_an_Antidote_to_Extreme_Partisan_Polarization_Reflections_on_America_in_One_Room.pdf
+                    Its_Like_Shouting_to_a_Brick_Wall_Normative_Whiteness_and_Racism_in_the_European_Parliament.pdf
+                    Its_the_procedures_stupid_The_success_and_failures_of_Chiles_Constitutional_Convention.pdf
+                    Laboratories_of_Democratic_Backsliding.pdf
+                    Land_and_Legibility_When_Do_Citizens_Expect_Secure_Property_Rights_in_Weak_States.pdf
+                    Lawmaking_and_Presidential_Attributes_in_the_Chilean_Constitution_Whats_the_Urgency.pdf
+                    Let_Our_Ballots_Secure_What_Our_Bullets_Have_Won_Union_Veterans_and_the_Making_of_Radical_Reconstruc.pdf
+                    Liberal_Plebeianism_John_Stuart_Mill_on_Democracy_Oligarchy_and_Working-Class_Mobilization.pdf
+                    Life_Literacy_and_the_Pursuit_of_Prosperity_Party_Competition_and_Policy_Outcomes_in_50_States.pdf
+                    Litigation_for_Sale_Private_Firms_and_WTO_Dispute_Escalation.pdf
+                    Local_News_and_the_Electoral_Incentive_to_Invest_in_Infrastructure.pdf
+                    Local_Norms_Political_Partisanship_and_Pandemic_Response_Evidence_from_the_United_States.pdf
+                    Locking_Down_Violence_The_COVID-19_Pandemics_Impact_on_Non-State_Actor_Violence.pdf
+                    Machine_learning_political_orders.pdf
+                    Making_Offenders_Vote_Democratic_Expressivism_and_Compulsory_Criminal_Voting.pdf
+                    Making_Sense_Making_Choices_How_Civilians_Choose_Survival_Strategies_during_Violence.pdf
+                    Meanings_norms_and_social_constitution_revisiting_ASEAN_centrality_in_East_Asian_regionalism.pdf
+                    Media_Reflect_Policy_the_Public_and_the_News.pdf
+                    Members_of_Parliament_are_Minimally_Accountable_for_Their_Issue_Stances_and_They_Know_It.pdf
+                    Meritocracy_as_Authoritarian_Co-Optation_Political_Selection_and_Upward_Mobility_in_China.pdf
+                    Midcentury_Modern_The_Emergence_of_Stakeholders_in_Democratic_Practice.pdf
+                    Migration_and_the_Demand_for_Transnational_Justice.pdf
+                    Military_Repression_and_Restraint_in_Algeria.pdf
+                    Mills_Constitution_of_Liberty_an_alternative_behavioural_policy_framework.pdf
+                    Minority_Party_Capacity_in_Congress.pdf
+                    Misinformation_in_Experimental_Political_Science.pdf
+                    Misperceptions_about_Refugee_Policy.pdf
+                    Modeling_Spatial_Heterogeneity_and_Historical_Persistence_Nazi_Concentration_Camps_and_Contemporary_.pdf
+                    Moderates.pdf
+                    Movement_versus_Party_The_Electoral_Effects_of_Anti-Far_Right_Protests_in_Greece.pdf
+                    My_History_or_Our_History_Historical_Revisionism_and_Entitlement_to_Lead.pdf
+                    Nietzsches_Critique_of_Power_Mimicry_and_the_Advantage_of_the_Weak.pdf
+                    Nostalgia_in_European_Party_Politics_A_Text-Based_Measurement_Approach.pdf
+                    Notes_from_the_Editors.pdf
+                    Notes_from_the_Editors_A_Bigger_Pie.pdf
+                    Notes_from_the_Editors_The_Committee_on_Publication_Ethics_COPE_Guidelines_for_Ethical_Reviews_and_S.pdf
+                    Novel_Coronavirus_Old_Partisanship_COVID-19_Attitudes_and_Behaviours_in_the_United_States_and_Canada.pdf
+                    Occupy_and_the_constitution_of_anarchy.pdf
+                    Ocean_literacy_for_an_Ocean_constitution.pdf
+                    Of_Constitutions_Campaigns_and_Commissions_A_Century_of_Democratic_Centralism_under_the_CCP.pdf
+                    Oh_help_Oh_no_The_international_politics_of_The_Gruffalo_Childrens_picturebooks_and_world_politics.pdf
+                    Oil_discoveries_and_political_windfalls_evidence_on_presidential_support_in_Uganda.pdf
+                    Openness_Purposiveness_and_the_Realignment_of_the_EU_and_the_Democratic_and_Social_Constitutional_St.pdf
+                    Ordering_disorder_The_making_of_world_politics.pdf
+                    Other_Peoples_Terrorism_Ideology_and_the_Perceived_Legitimacy_of_Political_Violence.pdf
+                    Overcoming_the_Political_Exclusion_of_Migrants_Theory_and_Experimental_Evidence_from_India.pdf
+                    Pan-African_gender_governance_The_politics_of_aspiration_at_the_African_Union.pdf
+                    Party_over_Pocketbook_How_Party_Cues_Influence_Opinion_When_Citizens_Have_a_Stake_in_Policy.pdf
+                    Party_Types_in_the_Age_of_Personalized_Politics.pdf
+                    Pathways_to_practice_praxiography_and_international_politics.pdf
+                    Patterns_of_Affective_Polarization_toward_Parties_and_Leaders_across_the_Democratic_World.pdf
+                    Payments_and_Penalties_for_Democracy_Gendered_Electoral_Financing_in_Action_Worldwide.pdf
+                    Planned Chaos.pdf
+                    Playing_to_the_Gallery_Emotive_Rhetoric_in_Parliaments.pdf
+                    Policing_Democratic_Participation_and_the_Reproduction_of_Asymmetric_Citizenship.pdf
+                    Policing_Insecurity.pdf
+                    Policy_Threat_Partisanship_and_the_Case_of_the_Affordable_Care_Act.pdf
+                    Political_Coalitions_and_Social_Media_Evidence_from_Pakistan.pdf
+                    Political_parties_issue_salience_and_the_appointment_of_women_cabinet_members.pdf
+                    Political_Responsiveness_to_Conflict_Victims_Evidence_from_a_Countrywide_Audit_Experiment_in_Colombi.pdf
+                    Political_shocks_and_asset_prices.pdf
+                    Political_Theory_in_an_Ethnographic_Key.pdf
+                    Political_Understanding.pdf
+                    Politicians_unleashed_Political_communication_on_Twitter_and_in_parliament_in_Western_Europe.pdf
+                    Politics_of_Nostalgia_and_Populism_Evidence_from_Turkey.pdf
+                    Post_Post-Broadcast_Democracy_News_Exposure_in_the_Age_of_Online_Intermediaries.pdf
+                    Preaching_Politics_How_Politicization_Undermines_Religious_Authority_in_the_Middle_East.pdf
+                    Prejudiced_When_Climbing_Up_or_When_Falling_Down_Why_Some_People_of_Color_Express_Anti-Black_Racism.pdf
+                    Presidential_Investment_in_the_Administrative_State.pdf
+                    Preventing_Rebel_Resurgence_after_Civil_War_A_Field_Experiment_in_Security_and_Justice_Provision_in_.pdf
+                    Prospects_for_Democratic_Breakdown_in_the_United_States_Bringing_the_States_Back_In.pdf
+                    Psychiatric_court_clinics_in_the_United_States.pdf
+                    Psychiatric_Examinations_in_the_United_States_and_Canada.pdf
+                    Public_Policy_and_Constitutional_Rights_in_Times_of_Crisis.pdf
+                    Public_Sector_Employment_and_Voter_Turnout.pdf
+                    Publius_Proleptic_Constitution.pdf
+                    Race_and_Representation_in_Campaign_Finance.pdf
+                    Race_and_systemic_crises_in_international_politics_An_agenda_for_pluralistic_scholarship.pdf
+                    Racial_Equality_and_Anticolonial_Solidarity_Antenor_Firmins_Global_Haitian_Liberalism.pdf
+                    Re-Evaluating_Machine_Learning_for_MRP_Given_the_Comparable_Performance_of_Deep_Hierarchical_Models.pdf
+                    Realism_and_Responsible_Parties.pdf
+                    Rebel_Motivations_and_Repression.pdf
+                    Reconsidering_the_Link_Between_Self-Reported_Personality_Traits_and_Political_Preferences.pdf
+                    Reexamining_the_Effect_of_Refugees_on_Civil_Conflict_A_Global_Subnational_Analysis.pdf
+                    Refugee_Networks_Cooperation_and_Resource_Access.pdf
+                    Regime_Support_and_Gender_Quotas_in_Autocracies.pdf
+                    Relaxing_Assumptions_Improving_Inference_Integrating_Machine_Learning_and_the_Linear_Regression.pdf
+                    Religion_or_Race_Using_Intersectionality_to_Examine_the_Role_of_Muslim_Identity_and_Evaluations_on_B.pdf
+                    Religion_Sexuality_Politics_and_the_Transformation_of_Latin_American_Electorates.pdf
+                    Renewable_Energy_Federalism_in_Germany_and_the_United_States.pdf
+                    Representation_and_Forest_Conservation_Evidence_from_Indias_Scheduled_Areas.pdf
+                    Representation_from_Below_How_Womens_Grassroots_Party_Activism_Promotes_Equal_Political_Participatio.pdf
+                    Representative_Democracy_and_Colonial_Inspirations_The_Case_of_John_Stuart_Mill.pdf
+                    Representative_Democracy_and_Social_Equality.pdf
+                    Repression_and_Dissent_in_Moments_of_Uncertainty_Panel_Data_Evidence_from_Zimbabwe.pdf
+                    Response_Options_and_the_Measurement_of_Political_Knowledge.pdf
+                    Revolutionary_Violence_and_Counterrevolution.pdf
+                    Richard McGregor：The Party——The Secret World of China's Communist Rulers.pdf
+                    Richard_Rorty_and_the_Demands_of_Liberalism.pdf
+                    Roll-Call_Vote_Selection_Implications_for_the_Study_of_Legislative_Politics.pdf
+                    Rule_Ambiguity_Institutional_Clashes_and_Population_Loss_How_Wikipedia_Became_the_Last_Good_Place_on.pdf
+                    Rule_Significance_and_Interbranch_Competition_in_Rulemaking_Processes.pdf
+                    Ruling_Divisions_The_Politics_of_Brexit.pdf
+                    Sanctuary_after_Asylum_Addressing_a_Gap_in_the_Political_Theory_of_Refuge.pdf
+                    Santal_indigenous_knowledge_cultural_heritage_and_the_politics_of_representation.pdf
+                    Saving_Migrants_Basic_Human_Rights_from_Sovereign_Rule.pdf
+                    Scholars_and_the_Politics_of_International_Art_Restitution.pdf
+                    Segregation_and_the_Spatial_Externalities_of_Inequality_A_Theory_of_Interdependence_and_Public_Goods.pdf
+                    Sequential_Polarization_The_Development_of_the_Rural-Urban_Political_Divide_19762020.pdf
+                    Serious_Conflicts_with_Benign_Outcomes_The_Electoral_Consequences_of_Conflictual_Cabinet_Termination.pdf
+                    Settler_Empire_and_the_United_States_Francis_Lieber_on_the_Laws_of_War.pdf
+                    Se_Habla_Espanol_Spanish-Language_Appeals_and_Candidate_Evaluations_in_the_United_States.pdf
+                    Sisters_Are_Doing_It_for_Themselves_How_Female_Combatants_Help_Generate_Gender-Inclusive_Peace_Agree.pdf
+                    Slavery_and_Oratory_Frederick_Douglass_in_the_History_of_Rhetoric.pdf
+                    Social_Capital_Institutional_Rules_and_Constitutional_Amendment_Rates.pdf
+                    Social_influence_and_political_participation_around_the_world.pdf
+                    Social_Media_Social_Control_and_the_Politics_of_Public_Shaming.pdf
+                    Social_Origins_of_Dictatorships_Elite_Networks_and_Political_Transitions_in_Haiti.pdf
+                    Sovereignty_Substance_and_Public_Support_for_European_Courts_Human_Rights_Rulings.pdf
+                    Spatial_Voting_Meets_Spatial_Policy_Positions_An_Experimental_Appraisal.pdf
+                    STADL_Up_The_Spatio-Temporal_Autoregressive_Distributed_Lag_Model_for_TSCS_Data_AnalysisCORRIGENDUM.pdf
+                    STADL_Up_The_Spatiotemporal_Autoregressive_Distributed_Lag_Model_for_TSCS_Data_Analysis.pdf
+                    State_International_Agreements_The_United_States_Canada_and_Constitutional_Evolution.pdf
+                    State_Support_for_Religion_and_Government_Legitimacy_in_Christian-Majority_Countries.pdf
+                    State_Terror_and_Long-Run_Development_The_Persistence_of_the_Khmer_Rouge.pdf
+                    State_Violence_Party_Formation_and_Electoral_Accountability_The_Political_Legacy_of_the_Marikana_Mas.pdf
+                    Statistically_Valid_Inferences_from_Privacy-Protected_Data.pdf
+                    Stimulated_political_decisions_local_leadership_turnover_and_firm_subsidies_in_China.pdf
+                    Strategic_Reporting_A_Formal_Model_of_Biases_in_Conflict_Data.pdf
+                    Structural_Domination_and_Freedom_in_the_Labor_Market_From_Voluntariness_to_Independence.pdf
+                    Studying_Policy_Design_Quality_in_Comparative_Perspective.pdf
+                    Subjects_and_Scholars_Views_on_the_Ethics_of_Political_Science_Field_Experiments.pdf
+                    Super-Unsupervised_Classification_for_Labelling_Text_Online_Political_Hostility_as_an_Illustration.pdf
+                    Sustained_Government_Engagement_Improves_Subsequent_Pandemic_Risk_Reporting_In_Conflict_Zones.pdf
+                    Symbolic_Refugee_Protection_Explaining_Latin_Americas_Liberal_Refugee_Laws.pdf
+                    Symposium_on_the_Contemporary_Politics_of_the_United_Kingdom_Introduction_and_Reflections.pdf
+                    Tabloid_Media_Campaigns_and_Public_Opinion_Quasi-Experimental_Evidence_on_Euroscepticism_in_England.pdf
+                    Taking_Stock_of_Solidarity_between_People_of_Color_A_Mini_Meta-Analysis_of_Five_Experiments.pdf
+                    Temporary_Disenfranchisement_Negative_Side_Effects_of_Lowering_the_Voting_Age.pdf
+                    The Quotable Mises.pdf
+                    The Sino-Soviet Split.pdf
+                    The Use of Knowledge in Society.pdf
+                    Theorising_the_memescape_The_spatial_politics_of_Internet_memes.pdf
+                    Theyre_Still_There_Hes_All_Gone_American_Fatalities_in_Foreign_Wars_and_Right-Wing_Radicalization_at.pdf
+                    The_Achilles_Heel_of_Constitutional_Jurisprudence_Conceptualization_of_Minority_Rights_by_Constituti.pdf
+                    The_Aging_Democracy_Demographic_Effects_Political_Legitimacy_and_the_Quest_for_Generational_Pluralis.pdf
+                    The_Ambivalence_of_Alexander_Berkmans_Anti-Prison_Anarchism.pdf
+                    The_Anthropocene_rupture_in_international_relations_Future_politics_and_international_life.pdf
+                    The_BIAT_and_the_AMP_as_measures_of_racial_prejudice_in_political_science_A_methodological_assessmen.pdf
+                    The_Case_for_Permanent_Residency_for_Frontline_Workers.pdf
+                    The_Colonial_Origins_of_Modern_Territoriality_Property_Surveying_in_the_Thirteen_Colonies.pdf
+                    The_comparative_meaning_of_political_space_a_comprehensive_modeling_approach.pdf
+                    The_Competing_Influence_of_Policy_Content_and_Political_Cues_Cross-Border_Evidence_from_the_United_S.pdf
+                    The_Composition_of_Descriptive_Representation.pdf
+                    The_constitutions_of_international_organisations_How_institutional_design_seeks_to_foster_diplomatic.pdf
+                    The_Constitution_of_the_Philippines_and_transformative_constitutionalism.pdf
+                    The_Correlates_of_State_Policy_and_the_Structure_of_State_Panel_Data.pdf
+                    The_Countervailing_Effects_of_Competition_on_Public_Goods_Provision_When_Bargaining_Inefficiencies_L.pdf
+                    The_Curious_Case_of_Theresa_May_and_the_Public_That_Did_Not_Rally_Gendered_Reactions_to_Terrorist_At.pdf
+                    The_Curse_of_Good_Intentions_Why_Anticorruption_Messaging_Can_Encourage_Bribery.pdf
+                    The_Distinctive_Political_Status_of_Dissident_Minorities.pdf
+                    The_Domestic_Sources_of_International_Reputation.pdf
+                    The_Economic_Consequences_of_Banking_Crises_The_Role_of_Central_Banks_and_Optimal_Independence.pdf
+                    The_Effects_of_Chinas_Development_Projects_on_Political_Accountability.pdf
+                    The_Effect_of_Gender_on_Interruptions_at_Congressional_Hearings.pdf
+                    The_Effect_of_Pregnancy_on_Engagement_with_Politics_Toward_a_Model_of_the_Political_Consequences_of_.pdf
+                    The_Effect_of_Television_Advertising_in_United_States_Elections.pdf
+                    The_EliteCitizen_Gap_in_International_Organization_Legitimacy.pdf
+                    The_Era_of_the_City_as_an_Emerging_Challenge_to_Liberal_Constitutional_Democracy.pdf
+                    The_Ex-Factor_Examining_the_Gendered_Effect_of_Divorce_on_Voter_Turnout.pdf
+                    The_gendered_politics_of_researching_military_policy_in_the_age_of_the_knowledge_economy.pdf
+                    The_Geography_of_Racially_Polarized_Voting_Calibrating_Surveys_at_the_District_Level.pdf
+                    The_German_Trade_Shock_and_the_Rise_of_the_Neo-Welfare_State_in_Early_Twentieth-Century_Britain.pdf
+                    The_Global_Resonance_of_Human_Rights_What_Google_Trends_Can_Tell_Us.pdf
+                    The_Influence_of_Unknown_Media_on_Public_Opinion_Evidence_from_Local_and_Foreign_News_Sources.pdf
+                    The_Institutional_Foundations_of_the_Uneven_Global_Spread_of_Constitutional_Courts.pdf
+                    The_international_politics_of_truth_C_Wright_Mills_and_the_sociology_of_the_international.pdf
+                    The_Journey_Home_Violence_Anchoring_and_Refugee_Decisions_to_Return.pdf
+                    The_Law_on_Police_Use_of_Force_in_the_United_States.pdf
+                    The_Long-Term_Effects_of_Neighborhood_Disadvantage_on_Voting_Behavior_The_Moving_to_Opportunity_Expe.pdf
+                    The_Long-Term_Effects_of_Oppression_Prussia_Political_Catholicism_and_the_Alternative_fuer_Deutschla.pdf
+                    The_Making_of_the_Modern_State_Social_Scientization_and_Education_Legislation_in_the_United_Kingdom_.pdf
+                    The_Marketplace_of_Ideas_and_the_Agora_Herodotus_on_the_Power_of_Isegoria.pdf
+                    The_Need_for_Chaos_and_Motivations_to_Share_Hostile_Political_Rumors.pdf
+                    The_Non-Democratic_Roots_of_Mass_Education_Evidence_from_200_Years.pdf
+                    The_Pandemic_Policy_U-Turn_Partisanship_Public_Health_and_Race_in_Decisions_to_Ease_COVID-19_Social_.pdf
+                    The_Paradox_of_Civilization_Preinstitutional_Sources_of_Security_and_Prosperity.pdf
+                    The_Perpetuity_of_the_Past_Transmission_of_Political_Inequality_across_Multiple_Generations.pdf
+                    The_Place_of_Constitutional_Conventions_in_the_Constitutional_Architecture_and_in_the_Courts.pdf
+                    The_Polarizing_Effect_of_Partisan_Echo_Chambers.pdf
+                    The_Political_Consequences_of_Green_Policies_Evidence_from_Italy.pdf
+                    The_Political_Consequences_of_Green_Policies_Evidence_from_ItalyCORRIGENDUM.pdf
+                    The_Political_Morality_of_School_Composition_The_Case_of_Religious_Selection.pdf
+                    The_Political_Role_of_the_Historian.pdf
+                    The_Politicization_of_COVID-19_and_Anti-Asian_Racism_in_the_United_States_An_Experimental_Approach.pdf
+                    The_Politics_of_Cybersecurity_and_the_Global_Internet.pdf
+                    The_politics_of_non-knowledge_at_Europes_borders_Errors_fakes_and_subjectivity.pdf
+                    The_Politics_of_Police_Data_State_Legislative_Capacity_and_the_Transparency_of_State_and_Substate_Ag.pdf
+                    The_Politics_of_Respectability_and_Black_Americans_Punitive_Attitudes.pdf
+                    The_politics_of_science_A_postscript.pdf
+                    The_Power_to_Nudge.pdf
+                    The_proposer_or_the_proposal_An_experimental_analysis_of_constitutional_beliefs.pdf
+                    The_Realignment_of_Political_Tolerance_in_the_United_States.pdf
+                    The_Relationship_between_Economic_Populist_Sovereignism_Globalization_and_Populist_Radical_Right_Pol.pdf
+                    The_Representational_Consequences_of_Municipal_Civil_Service_Reform.pdf
+                    The_Right_to_Hunger_Strike.pdf
+                    The_Right_to_Hunger_Strike_CORRIGENDUM.pdf
+                    The_Shadow_Effect_of_Courts_Judicial_Review_and_the_Politics_of_Preemptive_Reform.pdf
+                    The_Silenced_Text_Field_Experiments_on_Gendered_Experiences_of_Political_Participation.pdf
+                    The_Slaughter-House_Dissents_and_the_Reconstruction_of_American_Liberalism.pdf
+                    The_social_question_and_the_transnational_constitutional_space.pdf
+                    The_Swedish_Covid-19_strategy_and_voluntary_compliance_Failed_securitisation_or_constitutional_secur.pdf
+                    The_task_of_critique_in_times_of_post-truth_politics.pdf
+                    The_Two-Pronged_Middle_Class_The_Old_Bourgeoisie_New_State-Engineered_Middle_Class_and_Democratic_De.pdf
+                    The_United_States_and_the_making_of_an_Arctic_nation.pdf
+                    The_United_States_facing_allies_populist_blackmail_Why_the_Philippines_and_Turkey_threatened_to_real.pdf
+                    The_UrbanRural_Divide_in_Athenian_Political_Thought.pdf
+                    The_View_from_the_Future_Aurobindo_Ghoses_Anticolonial_Darwinism.pdf
+                    This_Ones_for_the_Boys_How_Gendered_Political_Socialization_Limits_Girls_Political_Ambition_and_Inte.pdf
+                    Three_Fallacies_Undermining_Participatory_Constitution_Making.pdf
+                    Ticketing_and_Turnout_The_Participatory_Consequences_of_Low-Level_Police_Contact.pdf
+                    Tilly, Charles - The Formation of National States in Western Europe.pdf
+                    Tilly_Goes_to_Church_The_Religious_and_Medieval_Roots_of_European_State_Fragmentation.pdf
+                    To_Emerge_Breadwinning_Motherhood_and_Womens_Decisions_to_Run_for_Office.pdf
+                    Trade_politics_at_the_checkout_lane_ethnocentrism_and_consumer_preferences.pdf
+                    Treaty_Exit_in_the_United_States_Insights_from_the_United_Kingdom_or_South_Africa.pdf
+                    Turnout_Turnaround_Ethnic_Minority_Victories_Mobilize_White_Voters.pdf
+                    Two_concepts_of_constitutional_legitimacy.pdf
+                    Unconstitutional_constitutional_amendment_or_constitutional_dismemberment_A_reappraisal_of_the_presi.pdf
+                    Understanding_and_Reducing_Biases_in_Elite_Beliefs_About_the_Electorate.pdf
+                    Under_What_Conditions_Do_Politicians_Reward_Their_Supporters_Evidence_from_Kenyas_Constituencies_Dev.pdf
+                    Unpacking_constitutional_literacy.pdf
+                    Unreported_Realities_The_Political_Economy_of_Media-Sourced_Data.pdf
+                    Unrepresentative_Claims_Speaking_for_Oneself_in_a_Social_Movement.pdf
+                    UN_Peacekeeping_and_Democratization_in_Conflict-Affected_Countries.pdf
+                    Vigilance_as_a_Practice_of_Postcolonial_Freedom.pdf
+                    Violence_in_the_American_Imaginary_Gender_Race_and_the_Politics_of_Superheroes.pdf
+                    Violent_political_rhetoric_on_Twitter.pdf
+                    Voter_Outreach_Campaigns_Can_Reduce_Affective_Polarization_among_Implementing_Political_Activists_Ev.pdf
+                    Voting_for_Votes_Opposition_Parties_Legislative_Activity_and_Electoral_Outcomes.pdf
+                    War_and_Nationalism_How_WW1_Battle_Deaths_Fueled_Civilians_Support_for_the_Nazi_Party.pdf
+                    Wealth_Slaveownership_and_Fighting_for_the_Confederacy_An_Empirical_Study_of_the_American_Civil_War.pdf
+                    We_the_heads_of_state_Pitfalls_of_global_constitutional_practice.pdf
+                    Whats_in_a_buzzword_A_systematic_review_of_the_state_of_populism_research_in_political_science.pdf
+                    Whats_Wrong_with_Neocolonialism_The_Case_of_Unequal_Trade_in_Cultural_Goods.pdf
+                    What_constitutes_successful_covert_action_Evaluating_unacknowledged_interventionism_in_foreign_affai.pdf
+                    What_Do_Americans_Want_from_Private_Government_Experimental_Evidence_Demonstrates_that_Americans_Wan.pdf
+                    What_Do_Left_Behind_Communities_Want_A_Qualitative_Study_in_the_United_Kingdom_using_Photo_Elicitati.pdf
+                    What_Politicians_Do_Not_Know_Can_Hurt_You_The_Effects_of_Information_on_Politicians_Spending_Decisio.pdf
+                    When_Are_Legislators_Responsive_to_Ethnic_Minorities_Testing_the_Role_of_Electoral_Incentives_and_Ca.pdf
+                    When_Do_Citizens_Consider_Political_Parties_Legitimate.pdf
+                    When_Do_Maennerparteien_Elect_Women_Radical_Right_Populist_Parties_and_Strategic_Descriptive_Represe.pdf
+                    When_History_Matters_Too_Much_Historians_and_the_Politics_of_History_in_Poland.pdf
+                    When_the_Whole_Is_Greater_than_the_Sum_of_Its_Parts_On_the_Conceptualization_and_Measurement_of_Popu.pdf
+                    When_to_Worry_about_Sensitivity_Bias_A_Social_Reference_Theory_and_Evidence_from_30_Years_of_List_Ex.pdf
+                    Which_Markets_Whose_Rationality_Markets_as_Polyvalent_Political_Devices.pdf
+                    Which_political_outsiders_do_Europeans_prefer_as_ministers.pdf
+                    White_Americans_Reactions_to_Racial_Disparities_in_COVID-19.pdf
+                    White_Americans_Reactions_to_Racial_Disparities_in_COVID-19_CORRIGENDUM.pdf
+                    Whitmans_Undemocratic_Vistas_Mortal_Anxiety_National_Glory_White_Supremacy.pdf
+                    Whose_News_Class-Biased_Economic_Reporting_in_the_United_States.pdf
+                    Who_Leads_Who_Follows_Measuring_Issue_Attention_and_Agenda_Setting_by_Legislators_and_the_Mass_Publi.pdf
+                    Who_Punishes_Extremist_Nominees_Candidate_Ideology_and_Turning_Out_the_Base_in_US_Elections.pdf
+                    Who_Shapes_the_Law_Gender_and_Racial_Bias_in_Judicial_Citations.pdf
+                    Who_Supports_Political_Violence.pdf
+                    Why_Arms_Control_Is_So_Rare.pdf
+                    Why_Austerity_The_Mass_Politics_of_a_Contested_Policy.pdf
+                    Why_Botter_How_Pro-Government_Bots_Fight_Opposition_in_Russia.pdf
+                    Why_Parties_Displace_Their_Voters_Gentrification_Coalitional_Change_and_the_Demise_of_Public_Housing.pdf
+                    Why_Political_Philosophy_Should_Be_Robust.pdf
+                    Willing_but_Unable_Reassessing_the_Relationship_between_Racial_Group_Consciousness_and_Black_Politic.pdf
+                    Womens_Representation_and_the_Gendered_Pipeline_to_Power.pdf
+                    Women_Also_Know_Stuff_Challenging_the_Gender_Gap_in_Political_Sophistication.pdf
+                    Women_Grab_Back_Exclusion_Policy_Threat_and_Womens_Political_Ambition.pdf
+                    Workplace_Contact_and_Support_for_Anti-Immigration_Parties.pdf
+                    World_in_the_making_On_the_global_visual_politics_of_climate_engineering.pdf
+                    WTO改革背景下发展中国家待遇问题.pdf
+                    yjc (1).doc
+                    [美]弗朗西斯·福山：不平等的加剧与未来的意识形态.pdf
+                    [美]弗朗西斯·福山：美国政治制度的衰败.pdf
+                    [美]朗西斯·福山：衰落中的美国.pdf
+                    ТЕРРОРИЗМ И КОММУНИЗМ.pdf
+                    “两大阵营“的划分及其变迁——政体视角下的美国宪法与最高法院.pdf
+                    “修正”民主的理想——论罗伯特·达尔对民主理想乌托邦成分的批判及其意义.pdf
+                    “卢梭困境”与多元主义民主的解决方案——兼论罗伯特·达尔多元主义民主的困境.pdf
+                    “外生型”民主难以巩固的根源探析.pdf
+                    “平等“原则是如何写进美国宪法的_——读埃里克·方纳新著《第二次建国》的启示.pdf
+                    “政治学原理”教与学之问：谁得到什么？何时和如何得到？.pdf
+                    “文化断层线”的谬误——亨廷顿“文明冲突论”再批判.pdf
+                    “文明冲突论”内核与是非探析.pdf
+                    “民主化”、“民主转型”与“民主巩固”：概念的澄清与辨析.pdf
+                    “民主化”改革与地区经济表现.pdf
+                    “民主巩固”的过程视野.pdf
+                    “泰式民主“的转型困境.pdf
+                    “福山的菜单”与政治现代化的逻辑——评《政治秩序与政治衰朽》.pdf
+                    “第三波”民主化浪潮以来的西方民主巩固理论：问题、现状与启示——基于文献综述的考察.pdf
+                    “第三波”民主化转型中政治势力博弈模式分析.pdf
+                    “第三波民主化浪潮”后拉美政治发展进程的特点.pdf
+                    “经济学帝国主义”对民主理论研究的影响.pdf
+                    “解耦“还是“脱钩“_——比较政治与区域研究的关联.pdf
+                    《政治学原理》教学大纲.pdf
+                    《民主的奇迹：美国宪法制定的127天》.pdf
+                    一样民主两种风情——萨托利论民主的古今分野.pdf
+                    丁抒：人祸——“大跃进”与大饥荒.pdf
+                    丁抒：阳谋——反右派运动始末.pdf
+                    不平等与政权更迭——民主转型与民主制的稳定.pdf
+                    专题二：第三波民主化研究——公民社会促进民主稳固吗？—以第三波民主化国家为例.pdf
+                    东亚中产阶级的政治参与及启示.pdf
+                    东亚国家民主化进程的影响因素分析 以韩国为例.pdf
+                    东亚民主生成的历史逻辑——一个理论性阐释.pdf
+                    东亚民主转型与政党政治的发展模式.pdf
+                    东南亚国家从威权到民主的政治转型及其制约因素.pdf
+                    东星十八年.pdf
+                    两种民主模式与第三波民主化的稳固.pdf
+                    个人主义与经济秩序.pdf
+                    中东变局后北非国家民主转型的困境——基于马克思主义民主理论的分析视角.pdf
+                    中东国家抗争政治的特点分析.pdf
+                    中华民族的自由女神——林昭罹难40年纪念文集.pdf
+                    中县干部：以成长历程为中心.pdf
+                    中国“政治”概念的专业阐释与社会建构.pdf
+                    中国中产阶极危机.pdf
+                    中国农村市场化研究  习近平.pdf
+                    中国农村市场化研究——习近平.pdf
+                    中国宪政改革可行性研究报告.pdf
+                    中国批判理论建构十讲.pdf
+                    中西文明与现代化_亨廷顿的启示.pdf
+                    为自由民主正名的得失——萨托利“民主理论”评析.pdf
+                    乌克兰和哈萨克斯坦族群政策的比较研究.pdf
+                    互联网发展与中国民主转型——海外学者的视点及评价.pdf
+                    互联网能带来“民主“吗——对近十年西方学界争议的一个概括.pdf
+                    亚历山大·杜布切克：杜布切克回忆录 (扫描版).pdf
+                    亚当斯的博林布鲁克式宪政观——以1766年《克拉伦登》信函为例.pdf
+                    亨廷顿与基辛格眼中的世界秩序_比较与反思.pdf
+                    亨廷顿的《第三波》与“民主和平”思潮.pdf
+                    人的安全保护与民主转型——基于阿富汗战争的考察.pdf
+                    人的行为（上）.pdf
+                    人的行为（下）.pdf
+                    从“完美独裁”到“不完美的民主”——墨西哥政治转型与民主质量评析.pdf
+                    从“政治发展”到“民主化”——比较政治学视域下的区域研究.pdf
+                    从“青瓦台厄运＂看韩国的社会文化.pdf
+                    从《历史的终结》到《后人类的未来》——评F．福山新著《我们的后人类的未来》.pdf
+                    从《第三波》到《文明的冲突》——简析塞缪尔·亨廷顿的政治思想.pdf
+                    从亨廷顿到福山：西方政治衰败理论的发展及评价.pdf
+                    从保守主义民主理论到宪法工程学——乔万尼·萨托利的主要著述及其学术贡献.pdf
+                    从公民参与看东亚民主转型.pdf
+                    从多数主义民主到协和民主：民主转型中民族整合模式转变.pdf
+                    从官僚政治到宪政民主——中国传统政治的特点与其现代转型.pdf
+                    从弗朗西斯·福山思想的转变看中国特色社会主义的生命力.pdf
+                    从政治发展理论到民主巩固理论：西方民主化研究的演进逻辑.pdf
+                    从效用到民主：转型中的行政责任.pdf
+                    从权威到民主－简析二战后韩国政治变迁.pdf
+                    从民生到民主的转型：中国民主选择的突破口.pdf
+                    从选拔政治到选举政治：党内民主的转型.pdf
+                    何博传：山坳上的中国——问题、困境、痛苦的选择 (扫描版).pdf
+                    何清涟 (主编)：20世纪后半叶历史解密.pdf
+                    何清涟：中国现代化的陷阱 (2006修订版).pdf
+                    何清涟：现代化的陷阱.pdf
+                    余杰：火与冰.pdf
+                    余杰：致帝国的悼词——中国大陆的自由状况及前景.pdf
+                    俄罗斯（民主转型）实例：精英的自我解放.pdf
+                    信任机制、契约互动与民主转型.pdf
+                    傅国涌：1949年——中国知识分子的私人记录 (扫描版).pdf
+                    傅国涌：1949年——中国知识分子的私人记录.pdf
+                    儒家文化区民主转型问题研究——以韩国和中国台湾为例.pdf
+                    全球化的终结？——后危机时代的世界.pdf
+                    全能政府.pdf
+                    六四诗集.pdf
+                    共识民主与 21 世纪民主化的“第四波”.pdf
+                    关于比较政治学几个基本问题的认识.pdf
+                    兹德涅克·姆林纳日：严寒来自克里姆林宫 (扫描版).pdf
+                    冉云飞：通往比傻帝国 (扫描版).pdf
+                    刘军宁：民主教程（电子版）.pdf
+                    刘军宁：社会革命，还是宪政革命？.docx
+                    刘宾雁：第二种忠诚.pdf
+                    刘晓波：刘晓波文集.pdf
+                    刘晓波：单刃毒剑——中国当代民族主义批判.pdf
+                    刘晓波：大国沉沦——写给中国的备忘录.pdf
+                    刘晓波：审美与人的自由.pdf
+                    刘晓波：未来的自由中国在民间.pdf
+                    制度生命周期视阈下美国政治衰败与未终结历史兼论弗朗西斯·福山的历史观转型.pdf
+                    制度积累与渐进替代：中国民主政治发展机制解析 (1).pdf
+                    制度积累与渐进替代：中国民主政治发展机制解析.pdf
+                    制度设计与民主转型的理论分析.pdf
+                    制度选择对民主转型结果的影响.pdf
+                    北京市委办公厅：1989年北京制止动乱平息反革命暴乱纪事 (扫描版).pdf
+                    协商民主：国家治理现代化的重要路径.pdf
+                    单少杰：毛泽东执政春秋.pdf
+                    南京国民政府立法院的精英性及民主转型——以立法委员为中心的考察.pdf
+                    南希·伯索尔和弗朗西斯福山：自由市场模式受审判.pdf
+                    南锥体地区民主转型的机会、选择和质量.pdf
+                    南非的“国家性”问题与民主转型.pdf
+                    南非的政府和社会变迁.pdf
+                    南非的民主转型与国家治理.pdf
+                    卡尔·波普尔：开放社会及其敌人.pdf
+                    卡莱斯·鲍什的民主理论评析.pdf
+                    印尼与菲律宾民主转型原因之比较研究.pdf
+                    印尼民主转型和民主化软着陆.pdf
+                    印度尼西亚民主转型中的军队改革研究(19982008年).pdf
+                    历史并未终结——近年来国内外关于马克思主义历史命运的思考.pdf
+                    历史教条与美国民主的困境——达尔“历史教条”理论的内涵分析与解决方案.pdf
+                    历史的先声.pdf
+                    历史的终结与最后的人.docx
+                    历史的终结还是目标_作为历史哲学家的弗朗西斯·福山.pdf
+                    反向的民主化：第三波民主的问题.pdf
+                    反資本主義的心鏡.pdf
+                    发展中国家现代化进程中的政治改革困境及其策略——亨廷顿政治改革思想及其启示.pdf
+                    变化社会中的政治秩序.[美] 塞缪尔·P·亨廷顿..pdf
+                    台湾民主转型中新闻传播的变迁与发展——一项基于对台湾新闻传播界深度访谈的研究.pdf
+                    史卫民 & 何岚：知青备忘录——上山下乡运动中的生产建设兵团 (扫描版).pdf
+                    后民主转型的政体巩固：一个动态的民主巩固概念.pdf
+                    后物质主义文化变迁理论与美国比较政治研究范式.pdf
+                    吳仁華：天安門血腥清場内幕.pdf
+                    吴仁华：八九天安门事件大事记.pdf
+                    吴冷西：十年论战——1956~1966中苏关系回忆录 (扫描版).pdf
+                    吴过：红卫兵档案.pdf
+                    周恩来文革讲话集 (拍照版).pdf
+                    哈耶克：通往奴役之路 (台版 殷海光译).pdf
+                    唐德刚：新中国三十年.pdf
+                    回到亨廷顿的福山——从保守主义到保守的自由主义.pdf
+                    回顧與反思——六四流亡學生17人.pdf
+                    国内有关战后马来西亚政治发展研究概述.pdf
+                    国家建构理论的两大流派及其研究新进展.pdf
+                    国家构建：制度创新与社会资本——评述弗朗西斯·福山的国家构建学说.pdf
+                    国家间的可比性与不可比性分析.pdf
+                    国防大学党史党建政工教研室：文化大革命研究资料 (上册 扫描版).pdf
+                    国防大学党史党建政工教研室：文化大革命研究资料 (下册 扫描版).pdf
+                    国防大学党史党建政工教研室：文化大革命研究资料 (中册 扫描版).pdf
+                    国际干预与民主转型——基于“阿拉伯之春”的经验观察.pdf
+                    国际贸易、初始威权类型与民主转型.pdf
+                    国际贸易、要素禀赋与政体类型的变迁——一个基于阶级均势的分析框架.pdf
+                    在传统与革新之间：麦克法兰史学思想及其影响.pdf
+                    在平等与自由之间拯救民主——萨托利论美国民主.pdf
+                    在社会力量与政治制度之间_亨廷顿论美国政治极化的底线与走向.pdf
+                    在自由主义民主中走向政治自由——浅析萨托利的民主观、自由观.pdf
+                    地缘政治、民主转型与俄罗斯外交政策.pdf
+                    地缘政治挑战时代的资本主义与民主日裔美籍学者弗朗西斯·福山专访.pdf
+                    坚守还是修正_回应福山再论“历史终结”的争议.pdf
+                    埃及危机的发展及走向.pdf
+                    塔德·舒尔茨：“布拉格之春”前后 (扫描版).pdf
+                    塞缪尔·亨廷顿政治现代化思想及其现实意义.pdf
+                    塞缪尔·亨廷顿的民主巩固理论研究.pdf
+                    墓碑：中国六十年代大饥荒纪实.pdf
+                    外部冲击、族群地理与选举更替——当代非洲民主转型的政治经济学.pdf
+                    多元主义民主的困境及其救治：罗伯特·达尔的分析.pdf
+                    多党制不是解决腐败问题的灵丹妙药.pdf
+                    姚監復：陳希同親述——眾口鑠金難鑠真.pdf
+                    威尔逊与美国政府体制研究——《国会政体》的写作与意义.pdf
+                    威权主义与民主转型——基于东南亚国家的视角分析.pdf
+                    威权主义与民主转型：概念、研究路径及过程研究.pdf
+                    威权主义视野下的埃及民主转型分析 (1).pdf
+                    威权主义视野下的埃及民主转型分析.pdf
+                    孔令平：血纪.pdf
+                    存在与时间-马丁·海德格尔.pdf
+                    孙立平：断裂——20世纪90年代以来的中国社会 (扫描版).pdf
+                    孙立平：转型与断裂——改革以来中国社会结构的变迁 (扫描版).pdf
+                    宋永毅 (主编)：文化大革命——历史真相和集体记忆.pdf
+                    对“麦迪逊式民主”和“平民主义民主”的超越——罗伯特·达尔多元民主思想探究.pdf
+                    对政党理念的知识考古学分析.pdf
+                    对政治思想史而言，“中国”是什么——以萧公权为中心的考察.pdf
+                    对民主及其与经济发展之关系的思考——读亨廷顿《第三波：20世纪后期民主化浪潮》.pdf
+                    对第三波民主化的若干思考.pdf
+                    对罗伯特·达尔《论民主》的一种解读.pdf
+                    寻找民主化研究的新路径：行为者方法与结构分析的结合.pdf
+                    导论_民主的时代_.pdf
+                    封從德：六四日記——廣場上的共和國 (掃描版).pdf
+                    小议民主转型中的民主设计.pdf
+                    尚未完成的美国宪法重塑——从《第二次建国》谈起.pdf
+                    尼泊尔制宪会议选举与民主转型.pdf
+                    巩固民主对政治发展中“民主巩固“的分析.pdf
+                    廖亦武：中国底层访谈录 (文字版 上).pdf
+                    廖亦武：最后的地主 上.pdf
+                    廖亦武：最后的地主 下.pdf
+                    建构性社会秩序与自发性社会秩序的融合——弗朗西斯·福山的社会秩序观述评.pdf
+                    弗朗西斯·福山对话朱云汉：美国难以接受与中国平起平坐.pdf
+                    张良：中国六四真相.pdf
+                    张雪忠 《新常识》（定稿）.pdf
+                    張萬舒：歷史的大爆炸——六四事件全境實錄 (掃描版).pdf
+                    当亨廷顿冲突叠加国际货币及贸易体系问题——试论中美贸易冲突的实质及应对.pdf
+                    当代中国行政问责效果乏力的病理分析与改革措施.pdf
+                    当代民主化浪潮的体现及其对我国的启示——对亨廷顿《第三波20世纪后期的民主化》的评析.pdf
+                    当代自由式民主的危机与韧性——从民主浪漫主义到民主现实主义.pdf
+                    彼得·弗拉基米洛夫：延安日记 (扫描版).pdf
+                    徐沛：无耻的洋人.pdf
+                    我亲历过的政治运动 (扫描版).pdf
+                    我的奋斗.pdf
+                    把政党找回来——政党与对外政策.pdf
+                    拉里·戴蒙德民主巩固理论述评.pdf
+                    探析亨廷顿的“政治秩序”思想——以《变化社会中的政治秩序》为核心.pdf
+                    探析军队力量在缅甸民主化进程中的影响程度——基于亨廷顿《第三波》.pdf
+                    提升国家文化软实力保持民族文化的独立性和鲜明特色.pdf
+                    摩尔多瓦民主转型的困境与反思.pdf
+                    政 治 的 概 念.pdf
+                    政党制度变迁与民主转型绩效：东南亚四国的比较研究.pdf
+                    政党现代化与撒哈拉以南非洲国家的民主巩固.pdf
+                    政府综合治理能力论.pdf
+                    政权结构、政党制度化与民主转型——对四国、地区的比较研究.pdf
+                    政治人.pdf
+                    政治的概念——兼论我们时代性困境的政治根源.pdf
+                    政治精英在民主转型与民主巩固中的作用.pdf
+                    政治自由与宪政的价值理念契合——基于萨托利的思想理路.pdf
+                    数字时代新闻记者的协商民主转型.pdf
+                    文化发展的一般模式与当代中国文化发展战略的选择.pdf
+                    文明冲突，还是文明化合？——从钱穆礼教论省察亨廷顿命题的困境与出路.pdf
+                    文武关系与民主转型——印度尼西亚个案研究（1998—2014）.pdf
+                    文聿：中国“左”祸 (扫描版).pdf
+                    新保守主义的困境——《十字路口的美国》评介.pdf
+                    新兴民主国家的政党制度与民主巩固.pdf
+                    新权威主义政治的有限合理性与民主转型的必然性——以东亚国家和地区为主要论说对象.pdf
+                    新的政治时代正悄然来临.pdf
+                    方方日记.pdf
+                    族群冲突对缅甸民主转型的影响.pdf
+                    无限制格斗术.pdf
+                    朋友还是对手：奥地利学派与芝加哥学派之争.pdf
+                    朱凌 我反对：一个人大代表的参政传奇.chm
+                    朱正：1957年的夏季——从百家争鸣到两家争鸣.pdf
+                    机会窗口、知识流动与缅甸选举制度的演变.pdf
+                    权力制衡：美国民主发展的引擎——从刘瑜《民主的细节》谈起.pdf
+                    李洪林：中国思想运动史 (1-317 扫描版).pdf
+                    李洪林：中国思想运动史 (318-530 扫描版).pdf
+                    李锐：大跃进亲历记——毛泽东秘书手记 (上卷 扫描版).pdf
+                    李锐：大跃进亲历记——毛泽东秘书手记 (下卷 扫描版).pdf
+                    李锐：庐山会议实录.pdf
+                    李鹏：关键时刻——李鹏日记.pdf
+                    杨子立：国家治理不能代替政治民主.docx
+                    杨显惠：夹边沟记事 (扫描版).pdf
+                    杨显惠：夹边沟记事.pdf
+                    杨显惠：定西孤儿院纪事——实录饥饿的绝境 (扫描版).pdf
+                    杨显惠：定西孤儿院纪事——实录饥饿的绝境.pdf
+                    杨继绳：中国改革年代的政治斗争.pdf
+                    杨继绳：墓碑——中国六十年代大饥荒纪实.pdf
+                    杨继绳：脱离实际必然走向谬误——就大饥荒年代的人口问题与孙经先商榷.pdf
+                    析萨托利“有限多数原则”.pdf
+                    林昭，不再被遗忘 (扫描版).pdf
+                    林昭：十四万言书——致人民日报编辑部信.pdf
+                    楊奎松：戰后中共奪取東北始末.pdf
+                    楊繼繩：墓碑——中國六十年代大饑荒紀實.pdf
+                    比较与借鉴：中东欧民主转型经验的中国意义.pdf
+                    比较政治“学“_——学术史与学科性的反思.pdf
+                    比较政治研究中的发展主义路径.pdf
+                    毛泽东军事思想的历史地位和当代价值_艾跃进.pdf
+                    毛泽东选集.pdf
+                    民主、全球化与历史的未来——弗朗西斯·福山教授访谈录.pdf
+                    民主与民主化：俄罗斯的民主转型之路.pdf
+                    民主与社会主义的汩关性：比较的视野——以第一波民主化进程为例.pdf
+                    民主化后国家能力的变化——对“第三波”民主化国家地区的类型学分析（19742014）.pdf
+                    民主发展的逻辑_身份解放与机制建设——基于对英、法、中三国的比较研究.pdf
+                    民主发展的重要原则：价值民主与事实民主的统一——读萨托利《民主新论》的一点启示.pdf
+                    民主国家政党体制制度化的价值与局限——梅因沃林政党体制学说评析.pdf
+                    民主崩溃的政治学.pdf
+                    民主巩固视角下的民主转型.pdf
+                    民主巩固：理论模式的评析.pdf
+                    民主新论.pdf
+                    民主理想和现实的冲突与调适——试析萨托利的民主理想与现实观.pdf
+                    民主理想目标可能又可欲：罗伯特·达尔的分析.pdf
+                    民主理论建构与现代政治分析——玛格丽特·利瓦伊对话罗伯特·A·达尔.pdf
+                    民主理论研究的转向与启示.pdf
+                    民主的模式：36个国家的政府形式和政府绩效 - （美）阿伦·利普哈特著.pdf
+                    民主的质量——来自印度的比较经验.pdf
+                    民主稳固还是民主衰退_第三波民主化浪潮的进展与困境.pdf
+                    民主转型、民粹情绪与民族主义的三重映像：从莱比塘事件看国家转型中的政治风险防控.pdf
+                    民主转型下的抗争政治.pdf
+                    民主转型与政治冲突：以政治认同为视角.pdf
+                    民主转型与政治暴力冲突的起落：以印尼为例.pdf
+                    民主转型中族际冲突的政治制度原因探析.pdf
+                    民主转型中的宪法工程学：一个理论框架.pdf
+                    民主转型中的民族问题——以苏联与西班牙为对象的比较研究 (1).pdf
+                    民主转型中的民族问题——以苏联与西班牙为对象的比较研究.pdf
+                    民主转型及其危机：乌克兰案例研究.pdf
+                    民主转型新特点下的政治体制纠错机制.pdf
+                    民主转型时代选举改革的理论探讨.pdf
+                    民主转型理论.pdf
+                    民主转型理论_研究路径、评论及发展.pdf
+                    民主转型的周期性.pdf
+                    民主转型的新路径：结构分析与战略选择的结合.pdf
+                    民主选举与社会分裂——东亚民主转型国家与地区的政治与政局.pdf
+                    民主：直接与间接之分野——试论乔·萨托利的民主观及其对当代中国民主建设的几点启示.pdf
+                    民国纪事本末.pdf
+                    民生与民主——转变经济发展方式条件下党的合法性基础转型.pdf
+                    民粹主义视角下的缅甸民主转型：基于综合调查数据的分析.pdf
+                    江迅：黃雀行動.pdf
+                    法团主义、公民社会以及中国民主转型.pdf
+                    法治优先_中国治理转型的战略选择——以亨廷顿和福山的政治发展理论为视角.pdf
+                    泰国的民主发展与政党定型分析.pdf
+                    浅析经济发展与政治民主化的正相关性——读亨廷顿《第三波》有感.pdf
+                    浅析韩国民粹主义产生的原因.pdf
+                    浅论“第三波”对中国政治民主发展的价值.pdf
+                    渐进政治改革与民主的转型（上）.pdf
+                    渐进政治改革与民主的转型（下）.pdf
+                    牛津通识读本：The Spanish Civil War.pdf
+                    王小波：沉默的大多数——王小波杂文集 (大字版).pdf
+                    王小波：沉默的大多数——王小波杂文集.pdf
+                    王怡：不服从的江湖 (扫描版).pdf
+                    王明：中共五十年 (扫描版).pdf
+                    王爱飞：波尔布特传.pdf
+                    现代国家与身份政治_晚近叙事的缘起与演进.pdf
+                    现代奥地利经济学派研究.pdf
+                    现代民族国家转型中的国家性问题及路径选择.pdf
+                    现实民主的描述性建构：论罗伯特·达尔的现实民主观.pdf
+                    理想和现实的融会与疏离——萨托利民主观批判.pdf
+                    理想民主的现实的程序性构造——罗伯特·达尔对理想民主的规范和描述.pdf
+                    瓦茨拉夫·哈维尔：哈维尔文集.pdf
+                    甘粹：北大魂——从林昭到八九民运.pdf
+                    生活的见证：一个普通中国人的家族史.docx
+                    生活的见证：一个普通中国人的家族史.pdf
+                    申东赫 & 布莱恩·哈登：Escape from Camp 14——One Man's Remarkable Odyssey from North Korea to Freedom in the West.pdf
+                    百辩经济学.pdf
+                    盖·德利斯勒：平壤——朝鲜之旅 (扫描版).pdf
+                    省宪法、省宪运动与民主转型困境.pdf
+                    社会制衡还是三权分立：政治权力的多元化从罗伯特·达尔的社会制衡思想谈起.pdf
+                    社会果真能制约权力？──对罗伯特·达尔多元主义民主理论的评论.pdf
+                    社会流动与中国农村政治稳定的内在逻辑——基于亨廷顿社会流动的分析视角.pdf
+                    社会结构与政治行动者之间的张力——方法论视野中的民主转型研究.pdf
+                    社会资本与经济发展：理论脉络与争辩.pdf
+                    社会运动与智利的民主转型.pdf
+                    福山民主观的变与常.pdf
+                    科学技术：自由民主制的意识形态资源——评《伊卡洛斯的陨落》.pdf
+                    程映虹：二十世纪最后的革命家——菲德尔·卡斯特罗传.pdf
+                    突尼斯和埃及的黎明？.pdf
+                    突尼斯民主转型时期的女性政治参与.pdf
+                    竞争—反馈式民主简介.pdf
+                    章诒和：往事并不如烟 (精校版 标注删节部分).pdf
+                    章诒和：最后的贵族 (大字版).pdf
+                    笑蜀：历史的先声——半个世纪前的庄严承诺 (大字版).pdf
+                    笑蜀：历史的先声——半个世纪前的庄严承诺 (扫描版).pdf
+                    笑蜀：历史的先声——半个世纪前的庄严承诺.pdf
+                    第三波之后的民主“困惑”.pdf
+                    第三波全球化的经济效应.pdf
+                    第三波民主化国家的政体转型与治理绩效（19742013）.pdf
+                    简析社会运动与国民党转型之关系.pdf
+                    简述亨廷顿文明冲突理论的争论.pdf
+                    米塞斯夫人回忆录.pdf
+                    精英与民主：西方精英主义民主理论述评.pdf
+                    精英民主的幻象——萨托利民主观批判.pdf
+                    纪念“六四”事件委员会：“六四”事件民间白皮书.pdf
+                    经济、科学与政治.pdf
+                    经济发展、政治文化与民主转型——社会结构视野中的民主化探析.pdf
+                    经济发展会带来民主化吗？——现代化理论的兴起、衰落与复兴.pdf
+                    经济发展在韩国民主转型中的作用.pdf
+                    经济学的最后基础.pdf
+                    经济政策取向与新兴民主的稳固.pdf
+                    经济社会发展视域中的民主转型与政治发展——“经济社会发展与民主政治建设国际学术会议”综述.pdf
+                    经济自由与政治民主不可兼得？第三波民主化国家的经济自由度变化评估.pdf
+                    经济解释.pdf
+                    缅甸当前对华认知特点及其走势.pdf
+                    缅甸改革及其前景刍议.pdf
+                    缅甸民主转型对印缅关系的机遇与挑战.pdf
+                    缅甸民主转型的政治困局探析 (1).pdf
+                    缅甸民主转型的政治困局探析.pdf
+                    缅甸民主转型的进展与挑战.pdf
+                    罗伯特·达尔多元民主理论的社会背景认知.pdf
+                    罗伯特·达尔多元民主理论的经济维度.pdf
+                    罗伯特·达尔对托克维尔的反驳.pdf
+                    罗伯特·达尔民主理论研究的方法论背景.pdf
+                    罗伯特·达尔民主观简评.pdf
+                    罗伯特·达尔的多元主义民主理论研究.pdf
+                    罗伯特·达尔的多元主义民主论评析.pdf
+                    罗伯特·达尔的政治平等理论及其发展前景.pdf
+                    罗伯特·达尔经济民主思想述评.pdf
+                    罗伯特·达尔论信仰与民主.pdf
+                    罗伯特·达尔论美国民主政治体制.pdf
+                    罗宾·门罗：铭记天安门.pdf
+                    罗平汉：农村人民公社史 (扫描版).pdf
+                    美国兴衰与民主体制是两回事——访弗朗西斯·福山.pdf
+                    美国国家特性的挑战读《我们是谁_美国国家特性面临的挑战》.pdf
+                    美国宪法中代议制民主的可能性出路——基于对阿克曼二元民主制理论的思考.pdf
+                    美国联邦立宪时期关于修宪问题的讨论.pdf
+                    美国自由主义宪政的片面逻辑及其实践中的危机.pdf
+                    美国金融危机的政府因素.pdf
+                    胡平：中国民运反思.pdf
+                    胡平：數人頭勝過砍人頭.pdf
+                    胡平：犬儒病——当代中国精神危机.pdf
+                    自治与控制——论罗伯特·达尔对多元主义民主困境的分析.pdf
+                    自由与繁荣的国度.pdf
+                    自由主义民主的训诫与镜鉴——读乔万尼·萨托利《民主新论》.pdf
+                    自由主义民主观的价值关怀——从《民主新论》谈起兼谈街头政治.pdf
+                    自由宪章.pdf
+                    芭芭拉·德米克：我们最幸福——北韩人民的真实生活.pdf
+                    英国辉格史学的演进、特征及其局限性探析.pdf
+                    莱赫·瓦文萨：瓦文萨自传 (扫描版).pdf
+                    菲律宾与印度尼西亚民主转型原因之异同——对《第三波》转型原因观点的验证.pdf
+                    菲律宾民主转型的原因探析.pdf
+                    萨托利“有限多数原则”及对我国民族区域自治实践的启示.pdf
+                    萨托利“有限多数原则”新解.pdf
+                    萨托利“有限多数原则”论析.pdf
+                    萨托利与达尔民主思想之比较.pdf
+                    萨托利与达尔的民主之辩.pdf
+                    萨托利代表制民主观念探析.pdf
+                    萨托利民主权力结构理论分析.pdf
+                    萨托利民主理论辨析.pdf
+                    萨托利的“有限多数原则”民主思想论析.pdf
+                    萨托利自由主义民主观评析.pdf
+                    蔡淑芳：廣場活碑——一個香港女記者眼中的六四血光.pdf
+                    融本土于世界：中国比较政治研究的未来.pdf
+                    衰朽与动荡_“阿拉伯之春“十周年反思.pdf
+                    袁剑：中国——奇迹的黄昏.pdf
+                    西方多民族国家建设的类型化研究——基于弗朗西斯·福山的“建构主义”视角.pdf
+                    西方民主史.pdf
+                    西方民主政体的自我防卫——研究现状与潜在突破.pdf
+                    西方民主政治问题和中国方案.pdf
+                    西方民主的理论困境——萨托利与哈贝马斯的范式之辩.pdf
+                    西方革命与东方革命的比较分析——基于亨廷顿革命类型理论.pdf
+                    计划出来的混乱.pdf
+                    认同危机与同一性霸权的恶果——对亨廷顿“文明冲突论“的反思.pdf
+                    认同问题和亨廷顿的洞见——重读《我们是谁？》.pdf
+                    论“第三波”民主化对民族分裂主义的作用.pdf
+                    论东亚威权政府的民主转型.pdf
+                    论东西方传统社会的社会结构与政府职能.pdf
+                    论中国的宪法、宪政与建构和谐社会的基础.pdf
+                    论中国近代宪政运动的起源——以康有为与戊戌变法为中心的再考察.pdf
+                    论休谟的经验保守主义政治思想.pdf
+                    论作为实质平等论者的罗伯特·达尔.pdf
+                    论加藤弘之的立宪政体思想.pdf
+                    论发展主义范式有效性与发展中国家政治发展——以阿尔蒙德、亨廷顿的理论比较为视角.pdf
+                    论宪政的价值基础.pdf
+                    论当代东亚国家政治发展及民主转型.pdf
+                    论政府能力及其特性.pdf
+                    论机会平等的实现与政府的公共责任——从萨托利的平等观说起.pdf
+                    论民主转型与政治文化研究的复兴.pdf
+                    论民主转型中的政治价值重构 (1).pdf
+                    论民主转型中的政治价值重构.pdf
+                    论生态发育与政府发生.pdf
+                    论社会转型与政府职能转变.pdf
+                    论福山“历史终结论”的建构路径从“最初的人”与“最后的人”谈起.pdf
+                    论究竟什么是三民主义和共产主义(2023.11.04).docx
+                    论罗伯特·达尔的政治理论及其社会价值.pdf
+                    论罗伯特·达尔的政治资源理论.pdf
+                    论美国宪法弹劾权的形成及潜在的制度困境.pdf
+                    论萨托利“有限多数原则”思想.pdf
+                    论萨托利民主思想的“价值与事实”二元要素.pdf
+                    论萨托利的直接与间接民主理论及对我国宪政建设的启示.pdf
+                    论西方比较政治研究的“理念转向”_学术背景、基本历程与启示意义.pdf
+                    论西方立宪政治理论及其启示.pdf
+                    评罗伯特·达尔对贤人统治理论的批评.pdf
+                    试析泰国1992年以来的民主转型与民族分离问题的关系.pdf
+                    试析罗伯特·达尔的多元民主理论.pdf
+                    试析萨托利思考民主的缘起.pdf
+                    试论美国制宪奇迹话语之构建.pdf
+                    试论美国现实的宪政危机及困境——基于2016年以来政党政治演变的考察.pdf
+                    诺曼·马内阿：流氓的归来 (扫描版).pdf
+                    诺曼·马内阿：论小丑——独裁者和艺术家 (扫描版).pdf
+                    诺曼·马内阿：黑信封 (扫描版).pdf
+                    谁是新中国.pdf
+                    谢幼田：中共壮大之谜——被掩盖的中国抗日战争真相.pdf
+                    货币与信用原理.pdf
+                    货币方法和市场过程.pdf
+                    走出帝制.pdf
+                    走出民主危机：从自由民主向社会民主的回归.pdf
+                    走出民主政治研究的困局.pdf
+                    赵锐：祭坛上的圣女——林昭传.pdf
+                    赵鼎新：The Power of Tiananmen——State-Society Relations and the 1989 Beijing Student Movement.pdf
+                    超越“人民主权”与“三权分立”之争－罗伯特·达尔的民主理论述评.pdf
+                    超越韦伯主义国家观——从亨廷顿到米格代尔.pdf
+                    
+            </div>            
+            <div>&nbsp;</div>
+
+
+
+            <script type="text/javascript">
+                function a() {
+                    var aa = document.getElementById("wenge");
+                    aa.src = "https://zh.m.wikipedia.org/wiki/%E6%96%87%E5%8C%96%E5%A4%A7%E9%9D%A9%E5%91%BD#";
+                    var aaa = document.getElementById("liusi");
+                    aaa.src = "https://zh.wikipedia.org/wiki/%E5%85%AD%E5%9B%9B%E4%BA%8B%E4%BB%B6";
+                }
+                function b() {
+                    var bb = document.getElementById("wenge");
+                    bb.src = "https://en.wiki.hancel.org/wiki/Cultural_Revolution";
+                    var bbb = document.getElementById("liusi");
+                    bbb.src = "https://en.wiki.hancel.org/wiki/1989_Tiananmen_Square_protests_and_massacre";
+                }
+                function c() {
+                    var cc = document.getElementById("wenge");
+                    cc.src = "https://en.jinzhao.wiki/wiki/Cultural_Revolution";
+                    var ccc = document.getElementById("liusi");
+                    ccc.src = "https://en.jinzhao.wiki/wiki/1989_Tiananmen_Square_protests_and_massacre";
+                }
+                function d() {
+                    var dd = document.getElementById("wenge");
+                    dd.src = "https://baike.baidu.com/item/%E6%97%A0%E4%BA%A7%E9%98%B6%E7%BA%A7%E6%96%87%E5%8C%96%E5%A4%A7%E9%9D%A9%E5%91%BD/615661";
+                    var ddd = document.getElementById("liusi");
+                    ddd.src = "https://baike.baidu.com/item/1989%E5%B9%B4%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E7%9A%84%E6%94%BF%E6%B2%BB%E9%A3%8E%E6%B3%A2%EF%BC%881989%E5%B9%B44%E6%9C%88%E2%80%946%E6%9C%88%EF%BC%89/56667564?fr=aladdin";
+                }
+                function e() {
+                    var ee = document.getElementById("wenge");
+                    ee.src = "https://www.britannica.com/event/Cultural-Revolution";
+                    var eee = document.getElementById("liusi");
+                    eee.src = "https://www.britannica.com/event/Tiananmen-Square-incident";
+                }
+            </script>
+                    <script src="./js/Valine.min.js"></script>
+
+                                <div>&nbsp;</div>
+                                <div>&nbsp;</div>
+
+                    <div id="vcomments"></div>
+                </div>
+                <div>&nbsp;</div>
+                <script>
+                    new Valine({
+                        el: '#vcomments',
+                        appId: 'YbdD8EOxag60XDXhiV57Cod7-gzGzoHsz',
+                        appKey: 'sBhksl6VeuraYQUBtQMuoSkr',
+                        emojiCDN: 'http://i0.hdslb.com/bfs/emote/',
+                        // 表情title和图片映射
+                        emojiMaps: {
+                            "tv_doge": "6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png",
+                            "tv_亲亲": "a8111ad55953ef5e3be3327ef94eb4a39d535d06.png",
+                            "tv_偷笑": "bb690d4107620f1c15cff29509db529a73aee261.png",
+                            "tv_再见": "180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png",
+                            "tv_冷漠": "b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png",
+                            "tv_发怒": "34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png",
+                            "tv_发财": "34db290afd2963723c6eb3c4560667db7253a21a.png",
+                            "tv_可爱": "9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png",
+                            "tv_吐血": "09dd16a7aa59b77baa1155d47484409624470c77.png",
+                            "tv_呆": "fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png",
+                            "tv_呕吐": "9f996894a39e282ccf5e66856af49483f81870f3.png",
+                            "tv_困": "241ee304e44c0af029adceb294399391e4737ef2.png",
+                            "tv_坏笑": "1f0b87f731a671079842116e0991c91c2c88645a.png",
+                            "tv_大佬": "093c1e2c490161aca397afc45573c877cdead616.png",
+                            "tv_大哭": "23269aeb35f99daee28dda129676f6e9ea87934f.png",
+                            "tv_委屈": "d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png",
+                            "tv_害羞": "a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png",
+                            "tv_尴尬": "7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png",
+                            "tv_微笑": "70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png",
+                            "tv_思考": "90cf159733e558137ed20aa04d09964436f618a1.png",
+                            "tv_惊吓": "0d15c7e2ee58e935adc6a7193ee042388adc22af.png",
+                        }
+                    })
+                </script>
+        </div>
+    </div>
+
+</body>
+
+</html>
