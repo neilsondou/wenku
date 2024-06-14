@@ -139,6 +139,39 @@
             text-align: center;
             padding: 20px 0;
         }
+
+        .card .icon {
+            font-size: 48px;
+            color: #3f51b5;
+        }
+
+        .card h2 {
+            margin: 16px 0 8px 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .card p {
+            margin: 8px 0;
+            color: #757575;
+            font-size: 16px;
+        }
+
+        .card .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 16px;
+        }
+
+        .card .stats div {
+            text-align: center;
+        }
+
+        .card .stats div span {
+            display: block;
+            font-size: 20px;
+            color: #333;
+        }
     </style>
 </head>
 <div class="mdui-dialog ab" id="about">
@@ -155,7 +188,7 @@
         class="mdui-icon material-icons mdui-color-theme-accent">&#xe5c5;</i></button>
 
 <body class="mdui-bottom-nav-fixed"
-    style="padding-top: 50px; background: url('./BG.jpg') no-repeat; background-attachment: fixed;">
+    style="padding-top: 50px; background: url('./BG.jpg') no-repeat; background-attachment: fixed; background-size: cover;">
     <div class="mdui-drawer mdui-drawer-full-height mdui-drawer-close mdui-color-white" id="sidebar">
         <p>&nbsp;</p>
 
@@ -228,9 +261,26 @@
                         <div class="mdui-row-xs-4">
 
                             <div class="mdui-col">
-                                <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple ab"><a
-                                        href="https://mega.nz/folder/yDx13YIA#AZJPo9VAX1c7k6jDc9FXOA">MEGA分享链接</a>
+                                <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple ab"
+                                    mdui-dialog="{target: '#download'}"><a>MEGA分享链接</a>
                                 </button>
+                                <div class="mdui-dialog ab" id="download">
+                                    <div class="mdui-dialog-content">
+                                        <li class="mdui-list-item mdui-ripple ab"
+                                            onclick="window.open('https://mega.nz/folder/yZ1gjK7I#gUmmzKEp8_88WYikbtRnMg');">
+                                            文库P1分享链接</li>
+                                        <li class="mdui-list-item mdui-ripple ab"
+                                            onclick="window.open('https://mega.nz/folder/DYlEnbJa#AN3kUQYILCw56niktezmcw');">
+                                            文库P2分享链接</li>
+                                        <li class="mdui-list-item mdui-ripple ab"
+                                            onclick="window.open('https://mega.nz/folder/9m8EwQAS#wQDfjue_NYb7kgNM20iWjA');">
+                                            文库P3分享链接</li>
+                                        <li class="mdui-list-item mdui-ripple ab"
+                                            onclick="window.open('https://mega.nz/folder/07Mj3BKL#cGnE078jrH1jyzjW-s3KSQ');">
+                                            文库P4分享链接</li>
+                                    </div>
+
+                                </div>
                             </div>
                             <div class="mdui-col">
                                 <button class="mdui-btn mdui-btn-block ab" disabled>谷歌网盘共享链接
@@ -285,6 +335,31 @@
                             Sync分享资源、文化书城等，您也可以提交自己的文库来合并到本文库中。
                         </div>
                         <div>&nbsp;</div>
+                    </div>
+                </div>
+                <div>&nbsp;</div>
+                <div class="aa">
+                    <div class="card">
+                        <div class="mdui-container">
+                            <div class="mdui-container">
+                                <div>&nbsp;</div>
+
+                                <h2><i class="mdui-icon material-icons">&#xe24d;</i>文库状态（包含未开放文件）</h2>
+                                <div class="stats">
+                                    <div>
+                                        <span>12,237</span> 文件数量
+                                    </div>
+                                    <div>
+                                        <span>152.7 GB</span> 文库大小
+                                    </div>
+                                    <div>
+                                        <span>187020</span> 总访问量
+                                    </div>
+                                </div>
+                                <div>&nbsp;</div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div>&nbsp;</div>
@@ -376,9 +451,6 @@
             </div>
 
         </div>
-        <footer>
-            <p>Copyright © 2021 plcn. All rights reserved. </p>
-        </footer>
     </div>
     </pre>
     <script>
@@ -406,19 +478,7 @@
             });
         });
     </script>
-    <script type="text/javascript">
-        var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate",
-            "bada", "nokia", "lg", "ucweb", "skyfire");
-        var browser = navigator.userAgent.toLowerCase();
-        var isMobile = false;
-        for (var i = 0; i < mobileAgent.length; i++) {
-            if (browser.indexOf(mobileAgent[i]) != -1) {
-                isMobile = true;
-                location.href = 'https://plcn.xyz/m.html';
-                break;
-            }
-        }
-    </script>
+
     </div>
 
 
