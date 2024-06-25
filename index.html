@@ -50,7 +50,7 @@
 		</div>
 		<div class="mainsection">
 			<div class="headerLinks">
-				<input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="搜索文库当中的项目">
+				<input type="text" id="simpleSearch" onkeyup="searchFunction()" placeholder="搜索文库当中的项目">
 
 				<div id="searchResults" class="searchResult"></div>
 			</div>
@@ -140,7 +140,7 @@
 				});
 
 			function searchFunction() {
-				const input = document.getElementById("searchInput");
+				const input = document.getElementById("simpleSearch");
 				const filter = input.value.toUpperCase();
 				const searchResults = document.getElementById("searchResults");
 				searchResults.innerHTML = "";
