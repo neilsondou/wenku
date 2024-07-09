@@ -13,7 +13,7 @@
 	<meta name="keywords" content="PLCN中文政治学、历史学文库 政治学|近代史|文革">
 </head>
 
-<body>
+<body onload="hide();">
 	<div class="wrapAll clearfix">
 		<div class="sidebar">
 			<div class="logo">
@@ -22,7 +22,7 @@
 			<div class="navigation">
 				<ul>
 					<li><a href="https://plcn.xyz">文库主页</a></li>
-					<li><a href="https://nas.plcn.xyz/">NAS下载</a></li>
+					<li><a href="https://nas.plcn.xyz/">访问在线图书馆</a></li>
 					<li><a href="http://me.plcn.xyz/">站长主页</a></li>
 					<li><a href="mailto:neilsondou@outlook.com">联系我</a></li>
 					<li><a href="mailto:neilsondou@outlook.com">共享文档</a></li>
@@ -63,78 +63,82 @@
 				<div id="searchResults" class="searchResult"></div>
 			</div>
 
+
 			<div class="article">
 				<h1>中文政治与历史学文库</h1>
-
-				<h2>Q 这个文库是什么性质、包含什么内容？
-				</h2>
-				<p>A 与社科院牵头所建立的国家哲学社会科学文献中心、各种私人维护的文库性质相同，本文库与维护文库的团队致力于搜集政治、文化、历史领域的各种学术或非学术内容，该内容所指包括但不限于<strong>学术期刊、论文、专著、小说、纪实文学、各类史料、通俗读本。</strong>
-				</p>
-				<h2>Q 这个文库建立的目的是什么？
-				</h2>
-				<p>A 为了自由地传播知识，践行自由知识与人文精神。
-				</p>
-				<h2>Q 自由知识的精神与人文精神分别是什么？
-				</h2>
-				<p>A 自由知识的精神来源于GNU的自由软件精神，这里所谓的自由知识是指人们能够自由学习、诠释、应用的知识，它亦可因人们需要而再重新诠释，并基于社群利益而互相分享（源自Open Knowledge Open
-					Definition Group） 人文精神指悉尼·胡克所作的《捍卫自由社会的教育》中的文段所表达的对人文学科研究的愿景：
-					“研究人文学科，能够培育对伟大且往往陌生的生活愿景和模式的理解与欣赏。在任何一种生活模式中，人文学科呈现出“人类内心自我冲突的问题”（威廉·福克纳）因此，人文学科涵盖了政治和意识形态的维度，但又超越了这些维度。它们不寻求共识，没有旗帜或信仰。
-					人文学科将我们带出自我，使我们能够用他人的眼睛和心灵看世界，同时也使我们意识到他人对我们内心的影响。无论如何定义人文学科并限定其课程范围，其培养都会永久性地丰富心灵的内在景观，不论在任何趋势或社会阶层下。因为它们不断提供新的喜悦、安慰、洞察，甚至成为了希望的源泉。”
-				</p>
-				<h2>Q 这个文库中的文档是“合规“的吗？
-				</h2>
-				<p>A 负责文库运营的团队并不对这个文库中包含的任何文档及其合法、合规负责，这个文库旨在分享任何有关政治学、历史学与其他学科的知识，这代表着它要尽可能地包含更多的相关内容，如果其中任何文档出现了任何相悖与任何地方法律、产生了版权纠纷一类的情况，请联系我删除之。该站点并未在中国大陆地区备案，故其并不是为中国大陆地区用户服务而开放的。任何中国大陆用户如果能够访问该网站，这种情况并不是出于我本人想要向大陆地区传播任何非法出版物的动机，而应当是给该站提供云服务的厂商所致（Cloudflare、Github、MEGA等）
-				</p>
-				<h2>Q 这个文库中的文档来源是什么？
-				</h2>
-				<p>A 文库中的大部分文档来源于：Cambridge Core期刊数据库、原种子书城、原豆豆文库、zlib、国家哲学社会科学文献中心、原语悦文库、原中文自由主义书库、Resilio
-					Sync分享资源、文化书城等等，您也可以提交自己的文库来合并到本文库中。
-				</p>
-				<div>&nbsp;</div>
-				<table>
-					<tr>
-						<th>下载方式</th>
-						<th>说明</th>
-					</tr>
-					<tr>
-						<td><strong>NAS下载</strong>（推荐该方法下载）</td>
-						<td>点击页面左侧的NAS下载链接，或访问 <a href="https://nas.plcn.xyz/">https://nas.plcn.xyz/</a>
-							来直接下载文件，该服务运营时段有限，所通过的CloudFlare Tunnel在中国大陆可访问。</td>
-					</tr>
-					<tr>
-						<td><strong>MEGA下载</strong></td>
-						<td>点击页面左侧的MEGA下载下的P1~4链接，来下载分片上传的文库。</td>
-					</tr>
-					<tr>
-						<td><strong>谷歌网盘下载</strong></td>
-						<td>由于文库过大，该下载方式已不可用。</td>
-					</tr>
-					<tr>
-						<td><strong>Cloudflare R2下载</strong></td>
-						<td>由于文库过大，该下载方式已不可用。</td>
-					</tr>
-					<tr>
-						<td><strong>远程Clone</strong></td>
-						<td>没有找到合适的服务商，暂不可用。</td>
-					</tr>
-					<tr>
-						<td><strong>Onedrive下载</strong></td>
-						<td>由于文库过大，该下载方式已不可用。</td>
-					</tr>
-					<tr>
-						<td><strong>Resilio Sync同步</strong></td>
-						<td>联系站长获取密钥</td>
-					</tr>
-				</table>
-				<div>&nbsp;</div>
-
+				<h2>文库现有文件：</h2>
+				<div class="chart">
+					<div class="bar bar-pdf">PDF<br>36%</div>
+					<div class="bar bar-azw3">AZW3<br>32%</div>
+					<div class="bar bar-epub">EPUB<br>27%</div>
+					<div class="bar bar-other">其他<br>5%</div>
+				</div>
 				<div class="contentsPanel">
-					<div class="contentsHeader h2">文件列表</div>
+					<div class="contentsHeader h2">关于文库的说明</div>
 					<ul>
-						<li>
-							<iframe src="./file.html" height="600" width=100%>
-							</iframe>
-						</li>
+						<h2>Q 这个文库是什么性质、包含什么内容？
+						</h2>
+						<p>A 与社科院牵头所建立的国家哲学社会科学文献中心、各种私人维护的文库性质相同，本文库与维护文库的团队致力于搜集政治、文化、历史领域的各种学术或非学术内容，该内容所指包括但不限于<strong>学术期刊、论文、专著、小说、纪实文学、各类史料、通俗读本。</strong>
+						</p>
+						<h2>Q 这个文库建立的目的是什么？
+						</h2>
+						<p>A 为了自由地传播知识，践行自由知识与人文精神。
+						</p>
+						<h2>Q 自由知识的精神与人文精神分别是什么？
+						</h2>
+						<p>A 自由知识的精神来源于GNU的自由软件精神，这里所谓的自由知识是指人们能够自由学习、诠释、应用的知识，它亦可因人们需要而再重新诠释，并基于社群利益而互相分享（源自Open
+							Knowledge Open
+							Definition Group） 人文精神指悉尼·胡克所作的《捍卫自由社会的教育》中的文段所表达的对人文学科研究的愿景：
+							“研究人文学科，能够培育对伟大且往往陌生的生活愿景和模式的理解与欣赏。在任何一种生活模式中，人文学科呈现出“人类内心自我冲突的问题”（威廉·福克纳）因此，人文学科涵盖了政治和意识形态的维度，但又超越了这些维度。它们不寻求共识，没有旗帜或信仰。
+							人文学科将我们带出自我，使我们能够用他人的眼睛和心灵看世界，同时也使我们意识到他人对我们内心的影响。无论如何定义人文学科并限定其课程范围，其培养都会永久性地丰富心灵的内在景观，不论在任何趋势或社会阶层下。因为它们不断提供新的喜悦、安慰、洞察，甚至成为了希望的源泉。”
+						</p>
+						<h2>Q 这个文库中的文档是“合规“的吗？
+						</h2>
+						<p>A 负责文库运营的团队并不对这个文库中包含的任何文档及其合法、合规负责，这个文库旨在分享任何有关政治学、历史学与其他学科的知识，这代表着它要尽可能地包含更多的相关内容，如果其中任何文档出现了任何相悖与任何地方法律、产生了版权纠纷一类的情况，请联系我删除之。该站点并未在中国大陆地区备案，故其并不是为中国大陆地区用户服务而开放的。任何中国大陆用户如果能够访问该网站，这种情况并不是出于我本人想要向大陆地区传播任何非法出版物的动机，而应当是给该站提供云服务的厂商所致（Cloudflare、Github、MEGA等）
+						</p>
+						<h2>Q 这个文库中的文档来源是什么？
+						</h2>
+						<p>A 文库中的大部分文档来源于：Cambridge Core期刊数据库、原种子书城、原豆豆文库、zlib、国家哲学社会科学文献中心、原语悦文库、原中文自由主义书库、Resilio
+							Sync分享资源、文化书城等等，您也可以提交自己的文库来合并到本文库中。
+						</p>
+						<div>&nbsp;</div>
+						<table>
+							<tr>
+								<th>下载方式</th>
+								<th>说明</th>
+							</tr>
+							<tr>
+								<td><strong>NAS下载</strong>（推荐该方法下载）</td>
+								<td>点击页面左侧的NAS下载链接，或访问 <a href="https://nas.plcn.xyz/">https://nas.plcn.xyz/</a>
+									来直接下载文件，该服务运营时段有限，所通过的CloudFlare Tunnel在中国大陆可访问。</td>
+							</tr>
+							<tr>
+								<td><strong>MEGA下载</strong></td>
+								<td>点击页面左侧的MEGA下载下的P1~4链接，来下载分片上传的文库。</td>
+							</tr>
+							<tr>
+								<td><strong>谷歌网盘下载</strong></td>
+								<td>由于文库过大，该下载方式已不可用。</td>
+							</tr>
+							<tr>
+								<td><strong>Cloudflare R2下载</strong></td>
+								<td>由于文库过大，该下载方式已不可用。</td>
+							</tr>
+							<tr>
+								<td><strong>远程Clone</strong></td>
+								<td>没有找到合适的服务商，暂不可用。</td>
+							</tr>
+							<tr>
+								<td><strong>Onedrive下载</strong></td>
+								<td>由于文库过大，该下载方式已不可用。</td>
+							</tr>
+							<tr>
+								<td><strong>Resilio Sync同步</strong></td>
+								<td>联系站长获取密钥</td>
+							</tr>
+						</table>
+						<div>&nbsp;</div>
+
 					</ul>
 				</div>
 
@@ -186,6 +190,16 @@
 					searchResults.style.display = "none";
 				}
 			}
+		</script>
+		<script>
+			function isMobileDevice() {
+				return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+			}
+			window.onload = function () {
+				if (isMobileDevice()) {
+					alert("本网站不支持手机访问");
+				}
+			};
 		</script>
 
 </body>

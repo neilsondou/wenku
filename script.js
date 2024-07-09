@@ -43,4 +43,12 @@ $(document).ready(function(){
 	
 });
 
+function hide1(){ 　　 
+    $(".hide").click(function(){
+		$( this ).siblings('ul').hide( 150, function() { 
+			$(this).parent().addClass('minimizedPanel');
+		});
+    });　
+} 
+window.onload = hide1;
 
