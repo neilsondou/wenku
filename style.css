@@ -890,3 +890,44 @@ span.user {
   text-align: center;
   font-size: 14px;
 }
+
+.bar-chart {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  padding: 5px;
+  margin-right: 20px;
+}
+.bar-segment {
+  height: 100%;
+}
+.pdf {
+  background-color: #9a9a9a;
+  color: #ffffff;
+
+  width: 36%;
+}
+.azw3 {
+  background-color: #6d6d6d;
+  color: #ffffff;
+
+  width: 32%;
+}
+.epub {
+  background-color: #4d4d4d;
+  color: #ffffff;
+
+  width: 27%;
+}
+.other {
+  background-color: #000000;
+  color: #ffffff;
+  width: 5%;
+}
+.info-list {
+  list-style-type: none;
+  padding: 0;
+}
+.info-list li {
+  margin-bottom: 10px;
+}
