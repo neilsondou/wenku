@@ -8,7 +8,7 @@ h1 {
 }
 
 table {
-  width: 100%;
+  width: 95%;
   margin: 0.3em;
   border-collapse: collapse;
   padding-top: 1em;
@@ -685,7 +685,6 @@ span.user {
 .contentsPanel {
   border: 1px solid #a2a9b1;
   background-color: #f8f9fa;
-  padding: 5px;
   font-size: 95%;
   position: relative;
   line-height: 1.7em;
@@ -893,10 +892,11 @@ span.user {
 
 .bar-chart {
   display: flex;
-  height: 50px;
+  height: 30px;
   width: 100%;
-  padding: 5px;
   margin-right: 20px;
+  text-align: center;
+  margin: auto;
 }
 .bar-segment {
   height: 100%;
@@ -905,19 +905,19 @@ span.user {
   background-color: #9a9a9a;
   color: #ffffff;
 
-  width: 36%;
+  width: 55%;
 }
 .azw3 {
   background-color: #6d6d6d;
   color: #ffffff;
 
-  width: 32%;
+  width: 23%;
 }
 .epub {
   background-color: #4d4d4d;
   color: #ffffff;
 
-  width: 27%;
+  width: 17%;
 }
 .other {
   background-color: #000000;
@@ -930,4 +930,29 @@ span.user {
 }
 .info-list li {
   margin-bottom: 10px;
+}
+
+.bar-chart2 {
+  display: flex;
+  height: 25px;
+  width: 100%;
+  margin-right: 20px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1pc;
+}
+.bar-segment2 {
+  height: 100%;
+}
+.amount {
+  background-color: #9a9a9a;
+  color: #ffffff;
+
+  width: 80%;
+}
+.size {
+  background-color: #000000;
+  color: #ffffff;
+
+  width: 20%;
 }
